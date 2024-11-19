@@ -1,0 +1,19 @@
+.menu {
+	position: fixed;
+	top: 9rem;
+	left: 2rem;
+	width: 28rem;
+	height: 52rem;
+	overflow: hidden;
+	transition-duration: var(--transition-duration-long);
+	transition-timing-function: var(--timing-function);
+	transition-property: transform;
+}
+
+.open {
+	transform: translateX(0rem);
+}
+
+.closed {
+	transform: translateX(-33rem);
+}
