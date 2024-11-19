@@ -26,3 +26,13 @@
 	background: var(--elevatedbgactive);
 	transform: scale(0.95);
 }
+
+.selected {
+	background: var(--text);
+	color: var(--elevatedbg);
+}
+
+.selected:hover {
+	transition-duration: var(--transition-duration-short);
+	background: var(--text);
+}

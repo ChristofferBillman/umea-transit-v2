@@ -6,7 +6,7 @@ import { ButtonProps } from '../Button/Button'
 interface Props extends ButtonProps {
 	linksTo: string
 }
-export function NavButton({ children, onClick, linksTo }: Props) {
+export function NavButton({ onClick, linksTo, ...props }: Props) {
 
 	const navigate = useNavigate()
 
@@ -16,8 +16,9 @@ export function NavButton({ children, onClick, linksTo }: Props) {
 	}
 
 	return (
-		<Button onClick={handleNav}>
-			{children}
-		</Button>
+		<Button
+			{...props}
+			onClick={handleNav}
+		/>
 	)
 }
