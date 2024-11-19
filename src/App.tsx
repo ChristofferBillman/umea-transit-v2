@@ -40,7 +40,10 @@ export default function App({ outlet }: Props) {
 
 	return (
 		<>
-			<Navbar setMenuOpen={setOpen} setPinsOpen={setPinsOpen} />
+			<Navbar
+				setMenuOpen={setOpen}
+				setPinsOpen={setPinsOpen}
+			/>
 			<Map />
 
 			<Menu open={open}>
