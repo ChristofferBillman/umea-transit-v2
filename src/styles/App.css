@@ -1,0 +1,48 @@
+:root {
+	--transition-duration-long: 500ms;
+	--transition-duration-mid: 200ms;
+	--transition-duration-short: 50ms;
+
+	--timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+
+	--border-radius-lg: 2rem;
+	--border-radius-sm: 0.75rem;
+
+	--elevatedbg: #f1f1f1;
+	--elevatedbghover: #e5e5e5;
+	--elevatedbgactive: #dadada;
+	--text: #282828;
+}
+
+html {
+	font-family: 'Inter';
+}
+
+body,
+input,
+textarea,
+button {
+	font-family: 'Inter';
+}
+
+.page-enter {
+	opacity: 0;
+	transform: translateX(-2rem);
+}
+
+.page-enter-active {
+	opacity: 1;
+	transform: translateX(0rem);
+	transition: opacity 300ms, transform 300ms;
+}
+
+.page-exit {
+	opacity: 1;
+	transform: scale(1);
+}
+
+.page-exit-active {
+	opacity: 0;
+	transform: translateX(2rem);
+	transition: opacity 300ms, transform 300ms;
+}
