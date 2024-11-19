@@ -1,0 +1,28 @@
+.button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+	padding: 0 0.5rem;
+	cursor: pointer;
+	border: none;
+	border-radius: var(--border-radius-sm);
+	font-size: 1rem;
+	font-weight: 500;
+	height: 2.75rem;
+	min-width: 2.75rem;
+	background: var(--elevatedbg);
+	transition-duration: var(--transition-duration-mid);
+	transition-property: background, transform;
+}
+
+.button:hover {
+	transition-duration: var(--transition-duration-short);
+	background: var(--elevatedbghover);
+}
+
+.button:active {
+	transition-duration: var(--transition-duration-short);
+	background: var(--elevatedbgactive);
+	transform: scale(0.95);
+}
