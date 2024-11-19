@@ -5,4 +5,5 @@
 	user-select: none;
 	font-variation-settings: 'FILL' 0, 'wght' 400;
 	vertical-align: bottom;
+	transition-duration: var(--transition-duration-mid);
 }
