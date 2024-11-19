@@ -1,0 +1,10 @@
+.input {
+	border: none;
+	height: 3.5rem;
+	padding: 0 1rem;
+	font-size: 1rem;
+	box-sizing: border-box;
+	width: 100%;
+	background: var(--elevatedbg);
+	border-radius: var(--border-radius-sm);
+}
