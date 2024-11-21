@@ -8,14 +8,29 @@
 	--border-radius-lg: 2rem;
 	--border-radius-sm: 0.75rem;
 
+	--bg: #fff;
 	--elevatedbg: #f1f1f1;
 	--elevatedbghover: #e5e5e5;
 	--elevatedbgactive: #dadada;
-	--text: #282828;
+	--text: #363636;
+	--muted-text: #868686;
+
+	--orange: #e5862f;
+	--red: #e52f2f;
+	--lime: #7fe52f;
+	--green: #37922f;
+	--yellow: #e9c400;
+	--blue: #2f78e5;
+	--cyan: #85dede;
+	--linegray: #c5c5c5;
+
+	--water: #eaf6f7;
 }
 
 html {
 	font-family: 'Inter';
+	color: var(--text);
+	overflow: hidden;
 }
 
 body,
@@ -23,6 +38,7 @@ input,
 textarea,
 button {
 	font-family: 'Inter';
+	color: var(--text);
 }
 
 .page-enter {
