@@ -1,13 +1,25 @@
-.menu {
+.pins {
 	position: fixed;
-	top: 9rem;
-	right: 2rem;
-	width: 28rem;
-	height: 52rem;
-	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	gap: 2rem;
+	top: 7rem;
+	right: 0;
+	width: 26rem;
+	height: calc(100vh - 14rem);
+	padding: 2rem;
+	overflow: scroll;
 	transition-duration: var(--transition-duration-long);
 	transition-timing-function: var(--timing-function);
 	transition-property: transform;
+	mask-image: linear-gradient(
+		to bottom,
+		transparent 0%,
+		black 4rem,
+		black calc(100% - 48px),
+		transparent 100%
+	);
 }
 
 .open {
@@ -16,4 +28,10 @@
 
 .closed {
 	transform: translateX(33rem);
+}
+
+.filler {
+	height: 2rem;
+	width: 100%;
+	box-sizing: border-box;
 }

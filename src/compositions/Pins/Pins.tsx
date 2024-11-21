@@ -1,17 +1,21 @@
 import clsx from 'clsx'
 
-import { Card, H1 } from '@components/common'
-
 import css from './Pins.module.css'
+import { usePinnedBoardsStore } from './usePinnedBoardsStore'
+import PinnedDepartureBoard from '@components/PinnedDepartureBoard'
 
 interface Props {
 	open: boolean
 }
 export function Pins({ open }: Props) {
 
+	const pins = usePinnedBoardsStore(state => state.pins)
+
 	return (
-		<Card className={clsx(css.menu, open ? css.open : css.closed)}>
-			<H1>Hello</H1>
-		</Card>
+		<div className={clsx(css.pins, open ? css.open : css.closed)}>
+			<div className={css.filler} />
+			{pins.map(stopId => <PinnedDepartureBoard stopId={stopId} key={stopId} />)}
+			<div className={css.filler} />
+		</div>
 	)
 }
