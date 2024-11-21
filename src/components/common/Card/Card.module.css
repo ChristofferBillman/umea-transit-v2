@@ -3,4 +3,5 @@
 	border-radius: var(--border-radius-lg);
 	padding: 1.25rem;
 	box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+	background: var(--bg);
 }
