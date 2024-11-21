@@ -1,0 +1,22 @@
+.linechip {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: var(--border-radius-sm);
+}
+
+.linechip p {
+	font-size: 1.25rem;
+	font-weight: 700;
+	color: white;
+}
+
+.sm {
+	width: 2rem;
+	height: 2rem;
+}
+
+.lg {
+	width: 4rem;
+	height: 4rem;
+}
