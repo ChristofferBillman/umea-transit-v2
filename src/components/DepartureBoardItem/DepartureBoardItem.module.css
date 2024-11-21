@@ -1,0 +1,26 @@
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: none;
+	padding: 2rem 1rem;
+	width: 100%;
+	margin: 0;
+}
+
+.container:hover {
+	background: var(--elevatedbg);
+}
+
+.inner {
+	display: flex;
+	gap: 2rem;
+	align-items: center;
+}
+
+.innerinner {
+	display: flex;
+	flex-direction: column;
+	align-items: baseline;
+	gap: 0.25rem;
+}
