@@ -1,14 +1,19 @@
 import { ReactNode, useState } from 'react'
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 
 import Map from '@components/Map'
 
-import Navbar from '@compositions/Navbar'
-import Menu from '@compositions/Menu'
+import Navbar from '@components/Navbar'
+import { Error } from '@components/common'
+import Menu from '@components/Menu'
 import Home from '@compositions/Home'
 import Directions from '@compositions/Directions'
 import Pins from '@compositions/Pins'
 
 import './styles/App.css'
+import DepartureBoards from '@compositions/DepartureBoards'
+import DepartureBoard from '@compositions/DepartureBoard'
+import { useMenuStore } from '@components/Menu/useMenuStore'
 
 export const routes = [
 	{
@@ -16,8 +21,13 @@ export const routes = [
 		element: <Home />,
 	},
 	{
-		path: '/stops',
-		element: <div>Test</div>,
+		path: '/departureBoards',
+		element: <DepartureBoards />,
+	},
+	{
+		path: '/departureBoards/:stopName',
+		element: <DepartureBoard />,
+		errorElement: <Error />
 	},
 	{
 		path: '/directions',
@@ -29,19 +39,21 @@ export const routes = [
 	}
 ]
 
+const queryClient = new QueryClient()
+
 interface Props {
 	outlet: ReactNode
 }
 
 export default function App({ outlet }: Props) {
 
-	const [open, setOpen] = useState(true)
+	const open = useMenuStore(state => state.open)
 	const [pinsOpen, setPinsOpen] = useState(false)
 
 	return (
-		<>
+		<QueryClientProvider client={queryClient}>
+
 			<Navbar
-				setMenuOpen={setOpen}
 				setPinsOpen={setPinsOpen}
 			/>
 			<Map />
@@ -51,6 +63,6 @@ export default function App({ outlet }: Props) {
 			</Menu>
 
 			<Pins open={pinsOpen} />
-		</>
+		</QueryClientProvider>
 	)
 }
