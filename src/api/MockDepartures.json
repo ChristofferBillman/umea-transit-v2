@@ -1,0 +1,2000 @@
+{
+	"Departure": [
+		{
+			"JourneyDetailRef": {
+				"ref": "1|123477|5|1|21112024"
+			},
+			"JourneyStatus": "P",
+			"ProductAtStop": {
+				"icon": {
+					"res": "prod_gen"
+				},
+				"operatorInfo": {
+					"name": "Länstrafiken Västerbotten",
+					"nameS": "272",
+					"nameN": "272",
+					"nameL": "Länstrafiken Västerbotten",
+					"id": "272"
+				},
+				"name": "Länstrafik - Buss 1",
+				"internalName": "Länstrafik - Buss 1",
+				"displayNumber": "1",
+				"num": "1",
+				"line": "1",
+				"lineId": "1272000100001",
+				"catOut": "BLT",
+				"catIn": "BLT",
+				"catCode": "7",
+				"cls": "128",
+				"catOutS": "BLT",
+				"catOutL": "Länstrafik - Buss",
+				"operatorCode": "272",
+				"operator": "Länstrafiken Västerbotten",
+				"admin": "272___",
+				"matchId": "1;1;34"
+			},
+			"Product": [
+				{
+					"icon": {
+						"res": "prod_gen"
+					},
+					"operatorInfo": {
+						"name": "Länstrafiken Västerbotten",
+						"nameS": "272",
+						"nameN": "272",
+						"nameL": "Länstrafiken Västerbotten",
+						"id": "272"
+					},
+					"name": "Länstrafik - Buss 1",
+					"internalName": "Länstrafik - Buss 1",
+					"displayNumber": "1",
+					"num": "1",
+					"line": "1",
+					"lineId": "1272000100001",
+					"catOut": "BLT",
+					"catIn": "BLT",
+					"catCode": "7",
+					"cls": "128",
+					"catOutS": "BLT",
+					"catOutL": "Länstrafik - Buss",
+					"operatorCode": "272",
+					"operator": "Länstrafiken Västerbotten",
+					"admin": "272___",
+					"routeIdxFrom": 14,
+					"routeIdxTo": 35,
+					"matchId": "1;1;34"
+				}
+			],
+			"Notes": {
+				"Note": [
+					{
+						"value": "Lag 2015:953 tillämpas",
+						"key": "EG",
+						"type": "A",
+						"routeIdxFrom": 14,
+						"routeIdxTo": 35,
+						"txtN": "Lag 2015:953 tillämpas"
+					}
+				]
+			},
+			"name": "Länstrafik - Buss 1",
+			"type": "ST",
+			"stop": "Umeå Stadshuset",
+			"stopid": "A=1@O=Umeå Stadshuset@X=20253335@Y=63828455@U=1@L=740045384@",
+			"stopExtId": "740045384",
+			"lon": 20.253335,
+			"lat": 63.828455,
+			"time": "08:01:00",
+			"date": "2024-11-21",
+			"reachable": true,
+			"direction": "Umeå Ö Ersboda",
+			"directionFlag": "2"
+		},
+		{
+			"JourneyDetailRef": {
+				"ref": "1|123447|1|1|21112024"
+			},
+			"JourneyStatus": "P",
+			"ProductAtStop": {
+				"icon": {
+					"res": "prod_gen"
+				},
+				"operatorInfo": {
+					"name": "Länstrafiken Västerbotten",
+					"nameS": "272",
+					"nameN": "272",
+					"nameL": "Länstrafiken Västerbotten",
+					"id": "272"
+				},
+				"name": "Länstrafik - Buss 1",
+				"internalName": "Länstrafik - Buss 1",
+				"displayNumber": "1",
+				"num": "1",
+				"line": "1",
+				"lineId": "1272000100001",
+				"catOut": "BLT",
+				"catIn": "BLT",
+				"catCode": "7",
+				"cls": "128",
+				"catOutS": "BLT",
+				"catOutL": "Länstrafik - Buss",
+				"operatorCode": "272",
+				"operator": "Länstrafiken Västerbotten",
+				"admin": "272___",
+				"matchId": "1;1;25"
+			},
+			"Product": [
+				{
+					"icon": {
+						"res": "prod_gen"
+					},
+					"operatorInfo": {
+						"name": "Länstrafiken Västerbotten",
+						"nameS": "272",
+						"nameN": "272",
+						"nameL": "Länstrafiken Västerbotten",
+						"id": "272"
+					},
+					"name": "Länstrafik - Buss 1",
+					"internalName": "Länstrafik - Buss 1",
+					"displayNumber": "1",
+					"num": "1",
+					"line": "1",
+					"lineId": "1272000100001",
+					"catOut": "BLT",
+					"catIn": "BLT",
+					"catCode": "7",
+					"cls": "128",
+					"catOutS": "BLT",
+					"catOutL": "Länstrafik - Buss",
+					"operatorCode": "272",
+					"operator": "Länstrafiken Västerbotten",
+					"admin": "272___",
+					"routeIdxFrom": 21,
+					"routeIdxTo": 35,
+					"matchId": "1;1;25"
+				}
+			],
+			"Notes": {
+				"Note": [
+					{
+						"value": "Lag 2015:953 tillämpas",
+						"key": "EG",
+						"type": "A",
+						"routeIdxFrom": 21,
+						"routeIdxTo": 35,
+						"txtN": "Lag 2015:953 tillämpas"
+					}
+				]
+			},
+			"name": "Länstrafik - Buss 1",
+			"type": "ST",
+			"stop": "Umeå Stadshuset",
+			"stopid": "A=1@O=Umeå Stadshuset@X=20253335@Y=63828455@U=1@L=740045384@",
+			"stopExtId": "740045384",
+			"lon": 20.253335,
+			"lat": 63.828455,
+			"time": "08:03:00",
+			"date": "2024-11-21",
+			"reachable": true,
+			"direction": "Umeå Paradisgränd",
+			"directionFlag": "1"
+		},
+		{
+			"JourneyDetailRef": {
+				"ref": "1|31921|0|1|21112024"
+			},
+			"JourneyStatus": "P",
+			"ProductAtStop": {
+				"icon": {
+					"res": "prod_gen"
+				},
+				"operatorInfo": {
+					"name": "Länstrafiken Västerbotten",
+					"nameS": "272",
+					"nameN": "272",
+					"nameL": "Länstrafiken Västerbotten",
+					"id": "272"
+				},
+				"name": "Länstrafik - Buss 7",
+				"internalName": "Länstrafik - Buss 7",
+				"displayNumber": "7",
+				"num": "7",
+				"line": "7",
+				"lineId": "1272000700001",
+				"catOut": "BLT",
+				"catIn": "BLT",
+				"catCode": "7",
+				"cls": "128",
+				"catOutS": "BLT",
+				"catOutL": "Länstrafik - Buss",
+				"operatorCode": "272",
+				"operator": "Länstrafiken Västerbotten",
+				"admin": "272___",
+				"matchId": "7;7;5"
+			},
+			"Product": [
+				{
+					"icon": {
+						"res": "prod_gen"
+					},
+					"operatorInfo": {
+						"name": "Länstrafiken Västerbotten",
+						"nameS": "272",
+						"nameN": "272",
+						"nameL": "Länstrafiken Västerbotten",
+						"id": "272"
+					},
+					"name": "Länstrafik - Buss 7",
+					"internalName": "Länstrafik - Buss 7",
+					"displayNumber": "7",
+					"num": "7",
+					"line": "7",
+					"lineId": "1272000700001",
+					"catOut": "BLT",
+					"catIn": "BLT",
+					"catCode": "7",
+					"cls": "128",
+					"catOutS": "BLT",
+					"catOutL": "Länstrafik - Buss",
+					"operatorCode": "272",
+					"operator": "Länstrafiken Västerbotten",
+					"admin": "272___",
+					"routeIdxFrom": 2,
+					"routeIdxTo": 9,
+					"matchId": "7;7;5"
+				}
+			],
+			"Notes": {
+				"Note": [
+					{
+						"value": "Lag 2015:953 tillämpas",
+						"key": "EG",
+						"type": "A",
+						"routeIdxFrom": 2,
+						"routeIdxTo": 9,
+						"txtN": "Lag 2015:953 tillämpas"
+					}
+				]
+			},
+			"name": "Länstrafik - Buss 7",
+			"type": "ST",
+			"stop": "Umeå Stadshuset",
+			"stopid": "A=1@O=Umeå Stadshuset@X=20253335@Y=63828455@U=1@L=740045384@",
+			"stopExtId": "740045384",
+			"lon": 20.253335,
+			"lat": 63.828455,
+			"time": "08:08:00",
+			"date": "2024-11-21",
+			"reachable": true,
+			"direction": "Umeå Rödberget",
+			"directionFlag": "1"
+		},
+		{
+			"JourneyDetailRef": {
+				"ref": "1|123446|6|1|21112024"
+			},
+			"JourneyStatus": "P",
+			"ProductAtStop": {
+				"icon": {
+					"res": "prod_gen"
+				},
+				"operatorInfo": {
+					"name": "Länstrafiken Västerbotten",
+					"nameS": "272",
+					"nameN": "272",
+					"nameL": "Länstrafiken Västerbotten",
+					"id": "272"
+				},
+				"name": "Länstrafik - Buss 1",
+				"internalName": "Länstrafik - Buss 1",
+				"displayNumber": "1",
+				"num": "1",
+				"line": "1",
+				"lineId": "1272000100001",
+				"catOut": "BLT",
+				"catIn": "BLT",
+				"catCode": "7",
+				"cls": "128",
+				"catOutS": "BLT",
+				"catOutL": "Länstrafik - Buss",
+				"operatorCode": "272",
+				"operator": "Länstrafiken Västerbotten",
+				"admin": "272___",
+				"matchId": "1;1;27"
+			},
+			"Product": [
+				{
+					"icon": {
+						"res": "prod_gen"
+					},
+					"operatorInfo": {
+						"name": "Länstrafiken Västerbotten",
+						"nameS": "272",
+						"nameN": "272",
+						"nameL": "Länstrafiken Västerbotten",
+						"id": "272"
+					},
+					"name": "Länstrafik - Buss 1",
+					"internalName": "Länstrafik - Buss 1",
+					"displayNumber": "1",
+					"num": "1",
+					"line": "1",
+					"lineId": "1272000100001",
+					"catOut": "BLT",
+					"catIn": "BLT",
+					"catCode": "7",
+					"cls": "128",
+					"catOutS": "BLT",
+					"catOutL": "Länstrafik - Buss",
+					"operatorCode": "272",
+					"operator": "Länstrafiken Västerbotten",
+					"admin": "272___",
+					"routeIdxFrom": 21,
+					"routeIdxTo": 35,
+					"matchId": "1;1;27"
+				}
+			],
+			"Notes": {
+				"Note": [
+					{
+						"value": "Lag 2015:953 tillämpas",
+						"key": "EG",
+						"type": "A",
+						"routeIdxFrom": 21,
+						"routeIdxTo": 35,
+						"txtN": "Lag 2015:953 tillämpas"
+					}
+				]
+			},
+			"name": "Länstrafik - Buss 1",
+			"type": "ST",
+			"stop": "Umeå Stadshuset",
+			"stopid": "A=1@O=Umeå Stadshuset@X=20253335@Y=63828455@U=1@L=740045384@",
+			"stopExtId": "740045384",
+			"lon": 20.253335,
+			"lat": 63.828455,
+			"time": "08:08:00",
+			"date": "2024-11-21",
+			"reachable": true,
+			"direction": "Umeå Paradisgränd",
+			"directionFlag": "1"
+		},
+		{
+			"JourneyDetailRef": {
+				"ref": "1|31922|0|1|21112024"
+			},
+			"JourneyStatus": "P",
+			"ProductAtStop": {
+				"icon": {
+					"res": "prod_gen"
+				},
+				"operatorInfo": {
+					"name": "Länstrafiken Västerbotten",
+					"nameS": "272",
+					"nameN": "272",
+					"nameL": "Länstrafiken Västerbotten",
+					"id": "272"
+				},
+				"name": "Länstrafik - Buss 7",
+				"internalName": "Länstrafik - Buss 7",
+				"displayNumber": "7",
+				"num": "7",
+				"line": "7",
+				"lineId": "1272000700001",
+				"catOut": "BLT",
+				"catIn": "BLT",
+				"catCode": "7",
+				"cls": "128",
+				"catOutS": "BLT",
+				"catOutL": "Länstrafik - Buss",
+				"operatorCode": "272",
+				"operator": "Länstrafiken Västerbotten",
+				"admin": "272___",
+				"matchId": "7;7;7"
+			},
+			"Product": [
+				{
+					"icon": {
+						"res": "prod_gen"
+					},
+					"operatorInfo": {
+						"name": "Länstrafiken Västerbotten",
+						"nameS": "272",
+						"nameN": "272",
+						"nameL": "Länstrafiken Västerbotten",
+						"id": "272"
+					},
+					"name": "Länstrafik - Buss 7",
+					"internalName": "Länstrafik - Buss 7",
+					"displayNumber": "7",
+					"num": "7",
+					"line": "7",
+					"lineId": "1272000700001",
+					"catOut": "BLT",
+					"catIn": "BLT",
+					"catCode": "7",
+					"cls": "128",
+					"catOutS": "BLT",
+					"catOutL": "Länstrafik - Buss",
+					"operatorCode": "272",
+					"operator": "Länstrafiken Västerbotten",
+					"admin": "272___",
+					"routeIdxFrom": 2,
+					"routeIdxTo": 9,
+					"matchId": "7;7;7"
+				}
+			],
+			"Notes": {
+				"Note": [
+					{
+						"value": "Lag 2015:953 tillämpas",
+						"key": "EG",
+						"type": "A",
+						"routeIdxFrom": 2,
+						"routeIdxTo": 9,
+						"txtN": "Lag 2015:953 tillämpas"
+					}
+				]
+			},
+			"name": "Länstrafik - Buss 7",
+			"type": "ST",
+			"stop": "Umeå Stadshuset",
+			"stopid": "A=1@O=Umeå Stadshuset@X=20253335@Y=63828455@U=1@L=740045384@",
+			"stopExtId": "740045384",
+			"lon": 20.253335,
+			"lat": 63.828455,
+			"time": "08:11:00",
+			"date": "2024-11-21",
+			"reachable": true,
+			"direction": "Umeå Rödberget",
+			"directionFlag": "1"
+		},
+		{
+			"JourneyDetailRef": {
+				"ref": "1|123477|6|1|21112024"
+			},
+			"JourneyStatus": "P",
+			"ProductAtStop": {
+				"icon": {
+					"res": "prod_gen"
+				},
+				"operatorInfo": {
+					"name": "Länstrafiken Västerbotten",
+					"nameS": "272",
+					"nameN": "272",
+					"nameL": "Länstrafiken Västerbotten",
+					"id": "272"
+				},
+				"name": "Länstrafik - Buss 1",
+				"internalName": "Länstrafik - Buss 1",
+				"displayNumber": "1",
+				"num": "1",
+				"line": "1",
+				"lineId": "1272000100001",
+				"catOut": "BLT",
+				"catIn": "BLT",
+				"catCode": "7",
+				"cls": "128",
+				"catOutS": "BLT",
+				"catOutL": "Länstrafik - Buss",
+				"operatorCode": "272",
+				"operator": "Länstrafiken Västerbotten",
+				"admin": "272___",
+				"matchId": "1;1;36"
+			},
+			"Product": [
+				{
+					"icon": {
+						"res": "prod_gen"
+					},
+					"operatorInfo": {
+						"name": "Länstrafiken Västerbotten",
+						"nameS": "272",
+						"nameN": "272",
+						"nameL": "Länstrafiken Västerbotten",
+						"id": "272"
+					},
+					"name": "Länstrafik - Buss 1",
+					"internalName": "Länstrafik - Buss 1",
+					"displayNumber": "1",
+					"num": "1",
+					"line": "1",
+					"lineId": "1272000100001",
+					"catOut": "BLT",
+					"catIn": "BLT",
+					"catCode": "7",
+					"cls": "128",
+					"catOutS": "BLT",
+					"catOutL": "Länstrafik - Buss",
+					"operatorCode": "272",
+					"operator": "Länstrafiken Västerbotten",
+					"admin": "272___",
+					"routeIdxFrom": 14,
+					"routeIdxTo": 35,
+					"matchId": "1;1;36"
+				}
+			],
+			"Notes": {
+				"Note": [
+					{
+						"value": "Lag 2015:953 tillämpas",
+						"key": "EG",
+						"type": "A",
+						"routeIdxFrom": 14,
+						"routeIdxTo": 35,
+						"txtN": "Lag 2015:953 tillämpas"
+					}
+				]
+			},
+			"name": "Länstrafik - Buss 1",
+			"type": "ST",
+			"stop": "Umeå Stadshuset",
+			"stopid": "A=1@O=Umeå Stadshuset@X=20253335@Y=63828455@U=1@L=740045384@",
+			"stopExtId": "740045384",
+			"lon": 20.253335,
+			"lat": 63.828455,
+			"time": "08:11:00",
+			"date": "2024-11-21",
+			"reachable": true,
+			"direction": "Umeå Ö Ersboda",
+			"directionFlag": "2"
+		},
+		{
+			"JourneyDetailRef": {
+				"ref": "1|123437|0|1|21112024"
+			},
+			"JourneyStatus": "P",
+			"ProductAtStop": {
+				"icon": {
+					"res": "prod_gen"
+				},
+				"operatorInfo": {
+					"name": "Länstrafiken Västerbotten",
+					"nameS": "272",
+					"nameN": "272",
+					"nameL": "Länstrafiken Västerbotten",
+					"id": "272"
+				},
+				"name": "Länstrafik - Buss 1",
+				"internalName": "Länstrafik - Buss 1",
+				"displayNumber": "1",
+				"num": "1",
+				"line": "1",
+				"lineId": "1272000100001",
+				"catOut": "BLT",
+				"catIn": "BLT",
+				"catCode": "7",
+				"cls": "128",
+				"catOutS": "BLT",
+				"catOutL": "Länstrafik - Buss",
+				"operatorCode": "272",
+				"operator": "Länstrafiken Västerbotten",
+				"admin": "272___",
+				"matchId": "1;1;29"
+			},
+			"Product": [
+				{
+					"icon": {
+						"res": "prod_gen"
+					},
+					"operatorInfo": {
+						"name": "Länstrafiken Västerbotten",
+						"nameS": "272",
+						"nameN": "272",
+						"nameL": "Länstrafiken Västerbotten",
+						"id": "272"
+					},
+					"name": "Länstrafik - Buss 1",
+					"internalName": "Länstrafik - Buss 1",
+					"displayNumber": "1",
+					"num": "1",
+					"line": "1",
+					"lineId": "1272000100001",
+					"catOut": "BLT",
+					"catIn": "BLT",
+					"catCode": "7",
+					"cls": "128",
+					"catOutS": "BLT",
+					"catOutL": "Länstrafik - Buss",
+					"operatorCode": "272",
+					"operator": "Länstrafiken Västerbotten",
+					"admin": "272___",
+					"routeIdxFrom": 10,
+					"routeIdxTo": 24,
+					"matchId": "1;1;29"
+				}
+			],
+			"Notes": {
+				"Note": [
+					{
+						"value": "Lag 2015:953 tillämpas",
+						"key": "EG",
+						"type": "A",
+						"routeIdxFrom": 10,
+						"routeIdxTo": 24,
+						"txtN": "Lag 2015:953 tillämpas"
+					}
+				]
+			},
+			"name": "Länstrafik - Buss 1",
+			"type": "ST",
+			"stop": "Umeå Stadshuset",
+			"stopid": "A=1@O=Umeå Stadshuset@X=20253335@Y=63828455@U=1@L=740045384@",
+			"stopExtId": "740045384",
+			"lon": 20.253335,
+			"lat": 63.828455,
+			"time": "08:15:00",
+			"date": "2024-11-21",
+			"reachable": true,
+			"direction": "Umeå Paradisgränd",
+			"directionFlag": "1"
+		},
+		{
+			"JourneyDetailRef": {
+				"ref": "1|123446|7|1|21112024"
+			},
+			"JourneyStatus": "P",
+			"ProductAtStop": {
+				"icon": {
+					"res": "prod_gen"
+				},
+				"operatorInfo": {
+					"name": "Länstrafiken Västerbotten",
+					"nameS": "272",
+					"nameN": "272",
+					"nameL": "Länstrafiken Västerbotten",
+					"id": "272"
+				},
+				"name": "Länstrafik - Buss 1",
+				"internalName": "Länstrafik - Buss 1",
+				"displayNumber": "1",
+				"num": "1",
+				"line": "1",
+				"lineId": "1272000100001",
+				"catOut": "BLT",
+				"catIn": "BLT",
+				"catCode": "7",
+				"cls": "128",
+				"catOutS": "BLT",
+				"catOutL": "Länstrafik - Buss",
+				"operatorCode": "272",
+				"operator": "Länstrafiken Västerbotten",
+				"admin": "272___",
+				"matchId": "1;1;31"
+			},
+			"Product": [
+				{
+					"icon": {
+						"res": "prod_gen"
+					},
+					"operatorInfo": {
+						"name": "Länstrafiken Västerbotten",
+						"nameS": "272",
+						"nameN": "272",
+						"nameL": "Länstrafiken Västerbotten",
+						"id": "272"
+					},
+					"name": "Länstrafik - Buss 1",
+					"internalName": "Länstrafik - Buss 1",
+					"displayNumber": "1",
+					"num": "1",
+					"line": "1",
+					"lineId": "1272000100001",
+					"catOut": "BLT",
+					"catIn": "BLT",
+					"catCode": "7",
+					"cls": "128",
+					"catOutS": "BLT",
+					"catOutL": "Länstrafik - Buss",
+					"operatorCode": "272",
+					"operator": "Länstrafiken Västerbotten",
+					"admin": "272___",
+					"routeIdxFrom": 21,
+					"routeIdxTo": 35,
+					"matchId": "1;1;31"
+				}
+			],
+			"Notes": {
+				"Note": [
+					{
+						"value": "Lag 2015:953 tillämpas",
+						"key": "EG",
+						"type": "A",
+						"routeIdxFrom": 21,
+						"routeIdxTo": 35,
+						"txtN": "Lag 2015:953 tillämpas"
+					}
+				]
+			},
+			"name": "Länstrafik - Buss 1",
+			"type": "ST",
+			"stop": "Umeå Stadshuset",
+			"stopid": "A=1@O=Umeå Stadshuset@X=20253335@Y=63828455@U=1@L=740045384@",
+			"stopExtId": "740045384",
+			"lon": 20.253335,
+			"lat": 63.828455,
+			"time": "08:18:00",
+			"date": "2024-11-21",
+			"reachable": true,
+			"direction": "Umeå Paradisgränd",
+			"directionFlag": "1"
+		},
+		{
+			"JourneyDetailRef": {
+				"ref": "1|31922|1|1|21112024"
+			},
+			"JourneyStatus": "P",
+			"ProductAtStop": {
+				"icon": {
+					"res": "prod_gen"
+				},
+				"operatorInfo": {
+					"name": "Länstrafiken Västerbotten",
+					"nameS": "272",
+					"nameN": "272",
+					"nameL": "Länstrafiken Västerbotten",
+					"id": "272"
+				},
+				"name": "Länstrafik - Buss 7",
+				"internalName": "Länstrafik - Buss 7",
+				"displayNumber": "7",
+				"num": "7",
+				"line": "7",
+				"lineId": "1272000700001",
+				"catOut": "BLT",
+				"catIn": "BLT",
+				"catCode": "7",
+				"cls": "128",
+				"catOutS": "BLT",
+				"catOutL": "Länstrafik - Buss",
+				"operatorCode": "272",
+				"operator": "Länstrafiken Västerbotten",
+				"admin": "272___",
+				"matchId": "7;7;9"
+			},
+			"Product": [
+				{
+					"icon": {
+						"res": "prod_gen"
+					},
+					"operatorInfo": {
+						"name": "Länstrafiken Västerbotten",
+						"nameS": "272",
+						"nameN": "272",
+						"nameL": "Länstrafiken Västerbotten",
+						"id": "272"
+					},
+					"name": "Länstrafik - Buss 7",
+					"internalName": "Länstrafik - Buss 7",
+					"displayNumber": "7",
+					"num": "7",
+					"line": "7",
+					"lineId": "1272000700001",
+					"catOut": "BLT",
+					"catIn": "BLT",
+					"catCode": "7",
+					"cls": "128",
+					"catOutS": "BLT",
+					"catOutL": "Länstrafik - Buss",
+					"operatorCode": "272",
+					"operator": "Länstrafiken Västerbotten",
+					"admin": "272___",
+					"routeIdxFrom": 2,
+					"routeIdxTo": 9,
+					"matchId": "7;7;9"
+				}
+			],
+			"Notes": {
+				"Note": [
+					{
+						"value": "Lag 2015:953 tillämpas",
+						"key": "EG",
+						"type": "A",
+						"routeIdxFrom": 2,
+						"routeIdxTo": 9,
+						"txtN": "Lag 2015:953 tillämpas"
+					}
+				]
+			},
+			"name": "Länstrafik - Buss 7",
+			"type": "ST",
+			"stop": "Umeå Stadshuset",
+			"stopid": "A=1@O=Umeå Stadshuset@X=20253335@Y=63828455@U=1@L=740045384@",
+			"stopExtId": "740045384",
+			"lon": 20.253335,
+			"lat": 63.828455,
+			"time": "08:21:00",
+			"date": "2024-11-21",
+			"reachable": true,
+			"direction": "Umeå Rödberget",
+			"directionFlag": "1"
+		},
+		{
+			"JourneyDetailRef": {
+				"ref": "1|123477|7|1|21112024"
+			},
+			"JourneyStatus": "P",
+			"ProductAtStop": {
+				"icon": {
+					"res": "prod_gen"
+				},
+				"operatorInfo": {
+					"name": "Länstrafiken Västerbotten",
+					"nameS": "272",
+					"nameN": "272",
+					"nameL": "Länstrafiken Västerbotten",
+					"id": "272"
+				},
+				"name": "Länstrafik - Buss 1",
+				"internalName": "Länstrafik - Buss 1",
+				"displayNumber": "1",
+				"num": "1",
+				"line": "1",
+				"lineId": "1272000100001",
+				"catOut": "BLT",
+				"catIn": "BLT",
+				"catCode": "7",
+				"cls": "128",
+				"catOutS": "BLT",
+				"catOutL": "Länstrafik - Buss",
+				"operatorCode": "272",
+				"operator": "Länstrafiken Västerbotten",
+				"admin": "272___",
+				"matchId": "1;1;38"
+			},
+			"Product": [
+				{
+					"icon": {
+						"res": "prod_gen"
+					},
+					"operatorInfo": {
+						"name": "Länstrafiken Västerbotten",
+						"nameS": "272",
+						"nameN": "272",
+						"nameL": "Länstrafiken Västerbotten",
+						"id": "272"
+					},
+					"name": "Länstrafik - Buss 1",
+					"internalName": "Länstrafik - Buss 1",
+					"displayNumber": "1",
+					"num": "1",
+					"line": "1",
+					"lineId": "1272000100001",
+					"catOut": "BLT",
+					"catIn": "BLT",
+					"catCode": "7",
+					"cls": "128",
+					"catOutS": "BLT",
+					"catOutL": "Länstrafik - Buss",
+					"operatorCode": "272",
+					"operator": "Länstrafiken Västerbotten",
+					"admin": "272___",
+					"routeIdxFrom": 14,
+					"routeIdxTo": 35,
+					"matchId": "1;1;38"
+				}
+			],
+			"Notes": {
+				"Note": [
+					{
+						"value": "Lag 2015:953 tillämpas",
+						"key": "EG",
+						"type": "A",
+						"routeIdxFrom": 14,
+						"routeIdxTo": 35,
+						"txtN": "Lag 2015:953 tillämpas"
+					}
+				]
+			},
+			"name": "Länstrafik - Buss 1",
+			"type": "ST",
+			"stop": "Umeå Stadshuset",
+			"stopid": "A=1@O=Umeå Stadshuset@X=20253335@Y=63828455@U=1@L=740045384@",
+			"stopExtId": "740045384",
+			"lon": 20.253335,
+			"lat": 63.828455,
+			"time": "08:21:00",
+			"date": "2024-11-21",
+			"reachable": true,
+			"direction": "Umeå Ö Ersboda",
+			"directionFlag": "2"
+		},
+		{
+			"JourneyDetailRef": {
+				"ref": "1|31914|0|1|21112024"
+			},
+			"JourneyStatus": "P",
+			"ProductAtStop": {
+				"icon": {
+					"res": "prod_gen"
+				},
+				"operatorInfo": {
+					"name": "Länstrafiken Västerbotten",
+					"nameS": "272",
+					"nameN": "272",
+					"nameL": "Länstrafiken Västerbotten",
+					"id": "272"
+				},
+				"name": "Länstrafik - Buss 7",
+				"internalName": "Länstrafik - Buss 7",
+				"displayNumber": "7",
+				"num": "7",
+				"line": "7",
+				"lineId": "1272000700001",
+				"catOut": "BLT",
+				"catIn": "BLT",
+				"catCode": "7",
+				"cls": "128",
+				"catOutS": "BLT",
+				"catOutL": "Länstrafik - Buss",
+				"operatorCode": "272",
+				"operator": "Länstrafiken Västerbotten",
+				"admin": "272___",
+				"matchId": "7;7;11"
+			},
+			"Product": [
+				{
+					"icon": {
+						"res": "prod_gen"
+					},
+					"operatorInfo": {
+						"name": "Länstrafiken Västerbotten",
+						"nameS": "272",
+						"nameN": "272",
+						"nameL": "Länstrafiken Västerbotten",
+						"id": "272"
+					},
+					"name": "Länstrafik - Buss 7",
+					"internalName": "Länstrafik - Buss 7",
+					"displayNumber": "7",
+					"num": "7",
+					"line": "7",
+					"lineId": "1272000700001",
+					"catOut": "BLT",
+					"catIn": "BLT",
+					"catCode": "7",
+					"cls": "128",
+					"catOutS": "BLT",
+					"catOutL": "Länstrafik - Buss",
+					"operatorCode": "272",
+					"operator": "Länstrafiken Västerbotten",
+					"admin": "272___",
+					"routeIdxFrom": 11,
+					"routeIdxTo": 18,
+					"matchId": "7;7;11"
+				}
+			],
+			"Notes": {
+				"Note": [
+					{
+						"value": "Lag 2015:953 tillämpas",
+						"key": "EG",
+						"type": "A",
+						"routeIdxFrom": 11,
+						"routeIdxTo": 18,
+						"txtN": "Lag 2015:953 tillämpas"
+					}
+				]
+			},
+			"name": "Länstrafik - Buss 7",
+			"type": "ST",
+			"stop": "Umeå Stadshuset",
+			"stopid": "A=1@O=Umeå Stadshuset@X=20253335@Y=63828455@U=1@L=740045384@",
+			"stopExtId": "740045384",
+			"lon": 20.253335,
+			"lat": 63.828455,
+			"time": "08:23:00",
+			"date": "2024-11-21",
+			"reachable": true,
+			"direction": "Umeå Rödberget",
+			"directionFlag": "1"
+		},
+		{
+			"JourneyDetailRef": {
+				"ref": "1|123438|0|1|21112024"
+			},
+			"JourneyStatus": "P",
+			"ProductAtStop": {
+				"icon": {
+					"res": "prod_gen"
+				},
+				"operatorInfo": {
+					"name": "Länstrafiken Västerbotten",
+					"nameS": "272",
+					"nameN": "272",
+					"nameL": "Länstrafiken Västerbotten",
+					"id": "272"
+				},
+				"name": "Länstrafik - Buss 1",
+				"internalName": "Länstrafik - Buss 1",
+				"displayNumber": "1",
+				"num": "1",
+				"line": "1",
+				"lineId": "1272000100001",
+				"catOut": "BLT",
+				"catIn": "BLT",
+				"catCode": "7",
+				"cls": "128",
+				"catOutS": "BLT",
+				"catOutL": "Länstrafik - Buss",
+				"operatorCode": "272",
+				"operator": "Länstrafiken Västerbotten",
+				"admin": "272___",
+				"matchId": "1;1;33"
+			},
+			"Product": [
+				{
+					"icon": {
+						"res": "prod_gen"
+					},
+					"operatorInfo": {
+						"name": "Länstrafiken Västerbotten",
+						"nameS": "272",
+						"nameN": "272",
+						"nameL": "Länstrafiken Västerbotten",
+						"id": "272"
+					},
+					"name": "Länstrafik - Buss 1",
+					"internalName": "Länstrafik - Buss 1",
+					"displayNumber": "1",
+					"num": "1",
+					"line": "1",
+					"lineId": "1272000100001",
+					"catOut": "BLT",
+					"catIn": "BLT",
+					"catCode": "7",
+					"cls": "128",
+					"catOutS": "BLT",
+					"catOutL": "Länstrafik - Buss",
+					"operatorCode": "272",
+					"operator": "Länstrafiken Västerbotten",
+					"admin": "272___",
+					"routeIdxFrom": 2,
+					"routeIdxTo": 16,
+					"matchId": "1;1;33"
+				}
+			],
+			"Notes": {
+				"Note": [
+					{
+						"value": "Lag 2015:953 tillämpas",
+						"key": "EG",
+						"type": "A",
+						"routeIdxFrom": 2,
+						"routeIdxTo": 16,
+						"txtN": "Lag 2015:953 tillämpas"
+					}
+				]
+			},
+			"name": "Länstrafik - Buss 1",
+			"type": "ST",
+			"stop": "Umeå Stadshuset",
+			"stopid": "A=1@O=Umeå Stadshuset@X=20253335@Y=63828455@U=1@L=740045384@",
+			"stopExtId": "740045384",
+			"lon": 20.253335,
+			"lat": 63.828455,
+			"time": "08:23:00",
+			"date": "2024-11-21",
+			"reachable": true,
+			"direction": "Umeå Paradisgränd",
+			"directionFlag": "1"
+		},
+		{
+			"JourneyDetailRef": {
+				"ref": "1|123446|8|1|21112024"
+			},
+			"JourneyStatus": "P",
+			"ProductAtStop": {
+				"icon": {
+					"res": "prod_gen"
+				},
+				"operatorInfo": {
+					"name": "Länstrafiken Västerbotten",
+					"nameS": "272",
+					"nameN": "272",
+					"nameL": "Länstrafiken Västerbotten",
+					"id": "272"
+				},
+				"name": "Länstrafik - Buss 1",
+				"internalName": "Länstrafik - Buss 1",
+				"displayNumber": "1",
+				"num": "1",
+				"line": "1",
+				"lineId": "1272000100001",
+				"catOut": "BLT",
+				"catIn": "BLT",
+				"catCode": "7",
+				"cls": "128",
+				"catOutS": "BLT",
+				"catOutL": "Länstrafik - Buss",
+				"operatorCode": "272",
+				"operator": "Länstrafiken Västerbotten",
+				"admin": "272___",
+				"matchId": "1;1;35"
+			},
+			"Product": [
+				{
+					"icon": {
+						"res": "prod_gen"
+					},
+					"operatorInfo": {
+						"name": "Länstrafiken Västerbotten",
+						"nameS": "272",
+						"nameN": "272",
+						"nameL": "Länstrafiken Västerbotten",
+						"id": "272"
+					},
+					"name": "Länstrafik - Buss 1",
+					"internalName": "Länstrafik - Buss 1",
+					"displayNumber": "1",
+					"num": "1",
+					"line": "1",
+					"lineId": "1272000100001",
+					"catOut": "BLT",
+					"catIn": "BLT",
+					"catCode": "7",
+					"cls": "128",
+					"catOutS": "BLT",
+					"catOutL": "Länstrafik - Buss",
+					"operatorCode": "272",
+					"operator": "Länstrafiken Västerbotten",
+					"admin": "272___",
+					"routeIdxFrom": 21,
+					"routeIdxTo": 35,
+					"matchId": "1;1;35"
+				}
+			],
+			"Notes": {
+				"Note": [
+					{
+						"value": "Lag 2015:953 tillämpas",
+						"key": "EG",
+						"type": "A",
+						"routeIdxFrom": 21,
+						"routeIdxTo": 35,
+						"txtN": "Lag 2015:953 tillämpas"
+					}
+				]
+			},
+			"name": "Länstrafik - Buss 1",
+			"type": "ST",
+			"stop": "Umeå Stadshuset",
+			"stopid": "A=1@O=Umeå Stadshuset@X=20253335@Y=63828455@U=1@L=740045384@",
+			"stopExtId": "740045384",
+			"lon": 20.253335,
+			"lat": 63.828455,
+			"time": "08:28:00",
+			"date": "2024-11-21",
+			"reachable": true,
+			"direction": "Umeå Paradisgränd",
+			"directionFlag": "1"
+		},
+		{
+			"JourneyDetailRef": {
+				"ref": "1|31922|2|1|21112024"
+			},
+			"JourneyStatus": "P",
+			"ProductAtStop": {
+				"icon": {
+					"res": "prod_gen"
+				},
+				"operatorInfo": {
+					"name": "Länstrafiken Västerbotten",
+					"nameS": "272",
+					"nameN": "272",
+					"nameL": "Länstrafiken Västerbotten",
+					"id": "272"
+				},
+				"name": "Länstrafik - Buss 7",
+				"internalName": "Länstrafik - Buss 7",
+				"displayNumber": "7",
+				"num": "7",
+				"line": "7",
+				"lineId": "1272000700001",
+				"catOut": "BLT",
+				"catIn": "BLT",
+				"catCode": "7",
+				"cls": "128",
+				"catOutS": "BLT",
+				"catOutL": "Länstrafik - Buss",
+				"operatorCode": "272",
+				"operator": "Länstrafiken Västerbotten",
+				"admin": "272___",
+				"matchId": "7;7;13"
+			},
+			"Product": [
+				{
+					"icon": {
+						"res": "prod_gen"
+					},
+					"operatorInfo": {
+						"name": "Länstrafiken Västerbotten",
+						"nameS": "272",
+						"nameN": "272",
+						"nameL": "Länstrafiken Västerbotten",
+						"id": "272"
+					},
+					"name": "Länstrafik - Buss 7",
+					"internalName": "Länstrafik - Buss 7",
+					"displayNumber": "7",
+					"num": "7",
+					"line": "7",
+					"lineId": "1272000700001",
+					"catOut": "BLT",
+					"catIn": "BLT",
+					"catCode": "7",
+					"cls": "128",
+					"catOutS": "BLT",
+					"catOutL": "Länstrafik - Buss",
+					"operatorCode": "272",
+					"operator": "Länstrafiken Västerbotten",
+					"admin": "272___",
+					"routeIdxFrom": 2,
+					"routeIdxTo": 9,
+					"matchId": "7;7;13"
+				}
+			],
+			"Notes": {
+				"Note": [
+					{
+						"value": "Lag 2015:953 tillämpas",
+						"key": "EG",
+						"type": "A",
+						"routeIdxFrom": 2,
+						"routeIdxTo": 9,
+						"txtN": "Lag 2015:953 tillämpas"
+					}
+				]
+			},
+			"name": "Länstrafik - Buss 7",
+			"type": "ST",
+			"stop": "Umeå Stadshuset",
+			"stopid": "A=1@O=Umeå Stadshuset@X=20253335@Y=63828455@U=1@L=740045384@",
+			"stopExtId": "740045384",
+			"lon": 20.253335,
+			"lat": 63.828455,
+			"time": "08:31:00",
+			"date": "2024-11-21",
+			"reachable": true,
+			"direction": "Umeå Rödberget",
+			"directionFlag": "1"
+		},
+		{
+			"JourneyDetailRef": {
+				"ref": "1|123477|8|1|21112024"
+			},
+			"JourneyStatus": "P",
+			"ProductAtStop": {
+				"icon": {
+					"res": "prod_gen"
+				},
+				"operatorInfo": {
+					"name": "Länstrafiken Västerbotten",
+					"nameS": "272",
+					"nameN": "272",
+					"nameL": "Länstrafiken Västerbotten",
+					"id": "272"
+				},
+				"name": "Länstrafik - Buss 1",
+				"internalName": "Länstrafik - Buss 1",
+				"displayNumber": "1",
+				"num": "1",
+				"line": "1",
+				"lineId": "1272000100001",
+				"catOut": "BLT",
+				"catIn": "BLT",
+				"catCode": "7",
+				"cls": "128",
+				"catOutS": "BLT",
+				"catOutL": "Länstrafik - Buss",
+				"operatorCode": "272",
+				"operator": "Länstrafiken Västerbotten",
+				"admin": "272___",
+				"matchId": "1;1;40"
+			},
+			"Product": [
+				{
+					"icon": {
+						"res": "prod_gen"
+					},
+					"operatorInfo": {
+						"name": "Länstrafiken Västerbotten",
+						"nameS": "272",
+						"nameN": "272",
+						"nameL": "Länstrafiken Västerbotten",
+						"id": "272"
+					},
+					"name": "Länstrafik - Buss 1",
+					"internalName": "Länstrafik - Buss 1",
+					"displayNumber": "1",
+					"num": "1",
+					"line": "1",
+					"lineId": "1272000100001",
+					"catOut": "BLT",
+					"catIn": "BLT",
+					"catCode": "7",
+					"cls": "128",
+					"catOutS": "BLT",
+					"catOutL": "Länstrafik - Buss",
+					"operatorCode": "272",
+					"operator": "Länstrafiken Västerbotten",
+					"admin": "272___",
+					"routeIdxFrom": 14,
+					"routeIdxTo": 35,
+					"matchId": "1;1;40"
+				}
+			],
+			"Notes": {
+				"Note": [
+					{
+						"value": "Lag 2015:953 tillämpas",
+						"key": "EG",
+						"type": "A",
+						"routeIdxFrom": 14,
+						"routeIdxTo": 35,
+						"txtN": "Lag 2015:953 tillämpas"
+					}
+				]
+			},
+			"name": "Länstrafik - Buss 1",
+			"type": "ST",
+			"stop": "Umeå Stadshuset",
+			"stopid": "A=1@O=Umeå Stadshuset@X=20253335@Y=63828455@U=1@L=740045384@",
+			"stopExtId": "740045384",
+			"lon": 20.253335,
+			"lat": 63.828455,
+			"time": "08:31:00",
+			"date": "2024-11-21",
+			"reachable": true,
+			"direction": "Umeå Ö Ersboda",
+			"directionFlag": "2"
+		},
+		{
+			"JourneyDetailRef": {
+				"ref": "1|123446|9|1|21112024"
+			},
+			"JourneyStatus": "P",
+			"ProductAtStop": {
+				"icon": {
+					"res": "prod_gen"
+				},
+				"operatorInfo": {
+					"name": "Länstrafiken Västerbotten",
+					"nameS": "272",
+					"nameN": "272",
+					"nameL": "Länstrafiken Västerbotten",
+					"id": "272"
+				},
+				"name": "Länstrafik - Buss 1",
+				"internalName": "Länstrafik - Buss 1",
+				"displayNumber": "1",
+				"num": "1",
+				"line": "1",
+				"lineId": "1272000100001",
+				"catOut": "BLT",
+				"catIn": "BLT",
+				"catCode": "7",
+				"cls": "128",
+				"catOutS": "BLT",
+				"catOutL": "Länstrafik - Buss",
+				"operatorCode": "272",
+				"operator": "Länstrafiken Västerbotten",
+				"admin": "272___",
+				"matchId": "1;1;37"
+			},
+			"Product": [
+				{
+					"icon": {
+						"res": "prod_gen"
+					},
+					"operatorInfo": {
+						"name": "Länstrafiken Västerbotten",
+						"nameS": "272",
+						"nameN": "272",
+						"nameL": "Länstrafiken Västerbotten",
+						"id": "272"
+					},
+					"name": "Länstrafik - Buss 1",
+					"internalName": "Länstrafik - Buss 1",
+					"displayNumber": "1",
+					"num": "1",
+					"line": "1",
+					"lineId": "1272000100001",
+					"catOut": "BLT",
+					"catIn": "BLT",
+					"catCode": "7",
+					"cls": "128",
+					"catOutS": "BLT",
+					"catOutL": "Länstrafik - Buss",
+					"operatorCode": "272",
+					"operator": "Länstrafiken Västerbotten",
+					"admin": "272___",
+					"routeIdxFrom": 21,
+					"routeIdxTo": 35,
+					"matchId": "1;1;37"
+				}
+			],
+			"Notes": {
+				"Note": [
+					{
+						"value": "Lag 2015:953 tillämpas",
+						"key": "EG",
+						"type": "A",
+						"routeIdxFrom": 21,
+						"routeIdxTo": 35,
+						"txtN": "Lag 2015:953 tillämpas"
+					}
+				]
+			},
+			"name": "Länstrafik - Buss 1",
+			"type": "ST",
+			"stop": "Umeå Stadshuset",
+			"stopid": "A=1@O=Umeå Stadshuset@X=20253335@Y=63828455@U=1@L=740045384@",
+			"stopExtId": "740045384",
+			"lon": 20.253335,
+			"lat": 63.828455,
+			"time": "08:38:00",
+			"date": "2024-11-21",
+			"reachable": true,
+			"direction": "Umeå Paradisgränd",
+			"directionFlag": "1"
+		},
+		{
+			"JourneyDetailRef": {
+				"ref": "1|56552|0|1|21112024"
+			},
+			"JourneyStatus": "P",
+			"ProductAtStop": {
+				"icon": {
+					"res": "prod_gen"
+				},
+				"operatorInfo": {
+					"name": "Länstrafiken Västerbotten",
+					"nameS": "272",
+					"nameN": "272",
+					"nameL": "Länstrafiken Västerbotten",
+					"id": "272"
+				},
+				"name": "Länstrafik - Buss 81",
+				"internalName": "Länstrafik - Buss 81",
+				"displayNumber": "81",
+				"num": "81",
+				"line": "81",
+				"lineId": "1272008100001",
+				"catOut": "BLT",
+				"catIn": "BLT",
+				"catCode": "7",
+				"cls": "128",
+				"catOutS": "BLT",
+				"catOutL": "Länstrafik - Buss",
+				"operatorCode": "272",
+				"operator": "Länstrafiken Västerbotten",
+				"admin": "272___",
+				"matchId": "81;81;1"
+			},
+			"Product": [
+				{
+					"icon": {
+						"res": "prod_gen"
+					},
+					"operatorInfo": {
+						"name": "Länstrafiken Västerbotten",
+						"nameS": "272",
+						"nameN": "272",
+						"nameL": "Länstrafiken Västerbotten",
+						"id": "272"
+					},
+					"name": "Länstrafik - Buss 81",
+					"internalName": "Länstrafik - Buss 81",
+					"displayNumber": "81",
+					"num": "81",
+					"line": "81",
+					"lineId": "1272008100001",
+					"catOut": "BLT",
+					"catIn": "BLT",
+					"catCode": "7",
+					"cls": "128",
+					"catOutS": "BLT",
+					"catOutL": "Länstrafik - Buss",
+					"operatorCode": "272",
+					"operator": "Länstrafiken Västerbotten",
+					"admin": "272___",
+					"routeIdxFrom": 15,
+					"routeIdxTo": 17,
+					"matchId": "81;81;1"
+				}
+			],
+			"Notes": {
+				"Note": [
+					{
+						"value": "Lag 2015:953 tillämpas",
+						"key": "EG",
+						"type": "A",
+						"routeIdxFrom": 15,
+						"routeIdxTo": 17,
+						"txtN": "Lag 2015:953 tillämpas"
+					}
+				]
+			},
+			"name": "Länstrafik - Buss 81",
+			"type": "ST",
+			"stop": "Umeå Stadshuset",
+			"stopid": "A=1@O=Umeå Stadshuset@X=20253335@Y=63828455@U=1@L=740045384@",
+			"stopExtId": "740045384",
+			"lon": 20.253335,
+			"lat": 63.828455,
+			"time": "08:40:00",
+			"date": "2024-11-21",
+			"reachable": true,
+			"direction": "Umeå Vasaplan",
+			"directionFlag": "1"
+		},
+		{
+			"JourneyDetailRef": {
+				"ref": "1|123477|9|1|21112024"
+			},
+			"JourneyStatus": "P",
+			"ProductAtStop": {
+				"icon": {
+					"res": "prod_gen"
+				},
+				"operatorInfo": {
+					"name": "Länstrafiken Västerbotten",
+					"nameS": "272",
+					"nameN": "272",
+					"nameL": "Länstrafiken Västerbotten",
+					"id": "272"
+				},
+				"name": "Länstrafik - Buss 1",
+				"internalName": "Länstrafik - Buss 1",
+				"displayNumber": "1",
+				"num": "1",
+				"line": "1",
+				"lineId": "1272000100001",
+				"catOut": "BLT",
+				"catIn": "BLT",
+				"catCode": "7",
+				"cls": "128",
+				"catOutS": "BLT",
+				"catOutL": "Länstrafik - Buss",
+				"operatorCode": "272",
+				"operator": "Länstrafiken Västerbotten",
+				"admin": "272___",
+				"matchId": "1;1;42"
+			},
+			"Product": [
+				{
+					"icon": {
+						"res": "prod_gen"
+					},
+					"operatorInfo": {
+						"name": "Länstrafiken Västerbotten",
+						"nameS": "272",
+						"nameN": "272",
+						"nameL": "Länstrafiken Västerbotten",
+						"id": "272"
+					},
+					"name": "Länstrafik - Buss 1",
+					"internalName": "Länstrafik - Buss 1",
+					"displayNumber": "1",
+					"num": "1",
+					"line": "1",
+					"lineId": "1272000100001",
+					"catOut": "BLT",
+					"catIn": "BLT",
+					"catCode": "7",
+					"cls": "128",
+					"catOutS": "BLT",
+					"catOutL": "Länstrafik - Buss",
+					"operatorCode": "272",
+					"operator": "Länstrafiken Västerbotten",
+					"admin": "272___",
+					"routeIdxFrom": 14,
+					"routeIdxTo": 35,
+					"matchId": "1;1;42"
+				}
+			],
+			"Notes": {
+				"Note": [
+					{
+						"value": "Lag 2015:953 tillämpas",
+						"key": "EG",
+						"type": "A",
+						"routeIdxFrom": 14,
+						"routeIdxTo": 35,
+						"txtN": "Lag 2015:953 tillämpas"
+					}
+				]
+			},
+			"name": "Länstrafik - Buss 1",
+			"type": "ST",
+			"stop": "Umeå Stadshuset",
+			"stopid": "A=1@O=Umeå Stadshuset@X=20253335@Y=63828455@U=1@L=740045384@",
+			"stopExtId": "740045384",
+			"lon": 20.253335,
+			"lat": 63.828455,
+			"time": "08:41:00",
+			"date": "2024-11-21",
+			"reachable": true,
+			"direction": "Umeå Ö Ersboda",
+			"directionFlag": "2"
+		},
+		{
+			"JourneyDetailRef": {
+				"ref": "1|31930|2|1|21112024"
+			},
+			"JourneyStatus": "P",
+			"ProductAtStop": {
+				"icon": {
+					"res": "prod_gen"
+				},
+				"operatorInfo": {
+					"name": "Länstrafiken Västerbotten",
+					"nameS": "272",
+					"nameN": "272",
+					"nameL": "Länstrafiken Västerbotten",
+					"id": "272"
+				},
+				"name": "Länstrafik - Buss 7",
+				"internalName": "Länstrafik - Buss 7",
+				"displayNumber": "7",
+				"num": "7",
+				"line": "7",
+				"lineId": "1272000700001",
+				"catOut": "BLT",
+				"catIn": "BLT",
+				"catCode": "7",
+				"cls": "128",
+				"catOutS": "BLT",
+				"catOutL": "Länstrafik - Buss",
+				"operatorCode": "272",
+				"operator": "Länstrafiken Västerbotten",
+				"admin": "272___",
+				"matchId": "7;7;8"
+			},
+			"Product": [
+				{
+					"icon": {
+						"res": "prod_gen"
+					},
+					"operatorInfo": {
+						"name": "Länstrafiken Västerbotten",
+						"nameS": "272",
+						"nameN": "272",
+						"nameL": "Länstrafiken Västerbotten",
+						"id": "272"
+					},
+					"name": "Länstrafik - Buss 7",
+					"internalName": "Länstrafik - Buss 7",
+					"displayNumber": "7",
+					"num": "7",
+					"line": "7",
+					"lineId": "1272000700001",
+					"catOut": "BLT",
+					"catIn": "BLT",
+					"catCode": "7",
+					"cls": "128",
+					"catOutS": "BLT",
+					"catOutL": "Länstrafik - Buss",
+					"operatorCode": "272",
+					"operator": "Länstrafiken Västerbotten",
+					"admin": "272___",
+					"routeIdxFrom": 7,
+					"routeIdxTo": 18,
+					"matchId": "7;7;8"
+				}
+			],
+			"Notes": {
+				"Note": [
+					{
+						"value": "Lag 2015:953 tillämpas",
+						"key": "EG",
+						"type": "A",
+						"routeIdxFrom": 7,
+						"routeIdxTo": 18,
+						"txtN": "Lag 2015:953 tillämpas"
+					}
+				]
+			},
+			"name": "Länstrafik - Buss 7",
+			"type": "ST",
+			"stop": "Umeå Stadshuset",
+			"stopid": "A=1@O=Umeå Stadshuset@X=20253335@Y=63828455@U=1@L=740045384@",
+			"stopExtId": "740045384",
+			"lon": 20.253335,
+			"lat": 63.828455,
+			"time": "08:45:00",
+			"date": "2024-11-21",
+			"reachable": true,
+			"direction": "Umeå Morkullevägen",
+			"directionFlag": "2"
+		},
+		{
+			"JourneyDetailRef": {
+				"ref": "1|123446|10|1|21112024"
+			},
+			"JourneyStatus": "P",
+			"ProductAtStop": {
+				"icon": {
+					"res": "prod_gen"
+				},
+				"operatorInfo": {
+					"name": "Länstrafiken Västerbotten",
+					"nameS": "272",
+					"nameN": "272",
+					"nameL": "Länstrafiken Västerbotten",
+					"id": "272"
+				},
+				"name": "Länstrafik - Buss 1",
+				"internalName": "Länstrafik - Buss 1",
+				"displayNumber": "1",
+				"num": "1",
+				"line": "1",
+				"lineId": "1272000100001",
+				"catOut": "BLT",
+				"catIn": "BLT",
+				"catCode": "7",
+				"cls": "128",
+				"catOutS": "BLT",
+				"catOutL": "Länstrafik - Buss",
+				"operatorCode": "272",
+				"operator": "Länstrafiken Västerbotten",
+				"admin": "272___",
+				"matchId": "1;1;39"
+			},
+			"Product": [
+				{
+					"icon": {
+						"res": "prod_gen"
+					},
+					"operatorInfo": {
+						"name": "Länstrafiken Västerbotten",
+						"nameS": "272",
+						"nameN": "272",
+						"nameL": "Länstrafiken Västerbotten",
+						"id": "272"
+					},
+					"name": "Länstrafik - Buss 1",
+					"internalName": "Länstrafik - Buss 1",
+					"displayNumber": "1",
+					"num": "1",
+					"line": "1",
+					"lineId": "1272000100001",
+					"catOut": "BLT",
+					"catIn": "BLT",
+					"catCode": "7",
+					"cls": "128",
+					"catOutS": "BLT",
+					"catOutL": "Länstrafik - Buss",
+					"operatorCode": "272",
+					"operator": "Länstrafiken Västerbotten",
+					"admin": "272___",
+					"routeIdxFrom": 21,
+					"routeIdxTo": 35,
+					"matchId": "1;1;39"
+				}
+			],
+			"Notes": {
+				"Note": [
+					{
+						"value": "Lag 2015:953 tillämpas",
+						"key": "EG",
+						"type": "A",
+						"routeIdxFrom": 21,
+						"routeIdxTo": 35,
+						"txtN": "Lag 2015:953 tillämpas"
+					}
+				]
+			},
+			"name": "Länstrafik - Buss 1",
+			"type": "ST",
+			"stop": "Umeå Stadshuset",
+			"stopid": "A=1@O=Umeå Stadshuset@X=20253335@Y=63828455@U=1@L=740045384@",
+			"stopExtId": "740045384",
+			"lon": 20.253335,
+			"lat": 63.828455,
+			"time": "08:48:00",
+			"date": "2024-11-21",
+			"reachable": true,
+			"direction": "Umeå Paradisgränd",
+			"directionFlag": "1"
+		},
+		{
+			"JourneyDetailRef": {
+				"ref": "1|123482|0|1|21112024"
+			},
+			"JourneyStatus": "P",
+			"ProductAtStop": {
+				"icon": {
+					"res": "prod_gen"
+				},
+				"operatorInfo": {
+					"name": "Länstrafiken Västerbotten",
+					"nameS": "272",
+					"nameN": "272",
+					"nameL": "Länstrafiken Västerbotten",
+					"id": "272"
+				},
+				"name": "Länstrafik - Buss 1",
+				"internalName": "Länstrafik - Buss 1",
+				"displayNumber": "1",
+				"num": "1",
+				"line": "1",
+				"lineId": "1272000100001",
+				"catOut": "BLT",
+				"catIn": "BLT",
+				"catCode": "7",
+				"cls": "128",
+				"catOutS": "BLT",
+				"catOutL": "Länstrafik - Buss",
+				"operatorCode": "272",
+				"operator": "Länstrafiken Västerbotten",
+				"admin": "272___",
+				"matchId": "1;1;44"
+			},
+			"Product": [
+				{
+					"icon": {
+						"res": "prod_gen"
+					},
+					"operatorInfo": {
+						"name": "Länstrafiken Västerbotten",
+						"nameS": "272",
+						"nameN": "272",
+						"nameL": "Länstrafiken Västerbotten",
+						"id": "272"
+					},
+					"name": "Länstrafik - Buss 1",
+					"internalName": "Länstrafik - Buss 1",
+					"displayNumber": "1",
+					"num": "1",
+					"line": "1",
+					"lineId": "1272000100001",
+					"catOut": "BLT",
+					"catIn": "BLT",
+					"catCode": "7",
+					"cls": "128",
+					"catOutS": "BLT",
+					"catOutL": "Länstrafik - Buss",
+					"operatorCode": "272",
+					"operator": "Länstrafiken Västerbotten",
+					"admin": "272___",
+					"routeIdxFrom": 14,
+					"routeIdxTo": 35,
+					"matchId": "1;1;44"
+				}
+			],
+			"Notes": {
+				"Note": [
+					{
+						"value": "Lag 2015:953 tillämpas",
+						"key": "EG",
+						"type": "A",
+						"routeIdxFrom": 14,
+						"routeIdxTo": 35,
+						"txtN": "Lag 2015:953 tillämpas"
+					}
+				]
+			},
+			"name": "Länstrafik - Buss 1",
+			"type": "ST",
+			"stop": "Umeå Stadshuset",
+			"stopid": "A=1@O=Umeå Stadshuset@X=20253335@Y=63828455@U=1@L=740045384@",
+			"stopExtId": "740045384",
+			"lon": 20.253335,
+			"lat": 63.828455,
+			"time": "08:51:00",
+			"date": "2024-11-21",
+			"reachable": true,
+			"direction": "Umeå Ö Ersboda",
+			"directionFlag": "2"
+		},
+		{
+			"JourneyDetailRef": {
+				"ref": "1|123446|11|1|21112024"
+			},
+			"JourneyStatus": "P",
+			"ProductAtStop": {
+				"icon": {
+					"res": "prod_gen"
+				},
+				"operatorInfo": {
+					"name": "Länstrafiken Västerbotten",
+					"nameS": "272",
+					"nameN": "272",
+					"nameL": "Länstrafiken Västerbotten",
+					"id": "272"
+				},
+				"name": "Länstrafik - Buss 1",
+				"internalName": "Länstrafik - Buss 1",
+				"displayNumber": "1",
+				"num": "1",
+				"line": "1",
+				"lineId": "1272000100001",
+				"catOut": "BLT",
+				"catIn": "BLT",
+				"catCode": "7",
+				"cls": "128",
+				"catOutS": "BLT",
+				"catOutL": "Länstrafik - Buss",
+				"operatorCode": "272",
+				"operator": "Länstrafiken Västerbotten",
+				"admin": "272___",
+				"matchId": "1;1;41"
+			},
+			"Product": [
+				{
+					"icon": {
+						"res": "prod_gen"
+					},
+					"operatorInfo": {
+						"name": "Länstrafiken Västerbotten",
+						"nameS": "272",
+						"nameN": "272",
+						"nameL": "Länstrafiken Västerbotten",
+						"id": "272"
+					},
+					"name": "Länstrafik - Buss 1",
+					"internalName": "Länstrafik - Buss 1",
+					"displayNumber": "1",
+					"num": "1",
+					"line": "1",
+					"lineId": "1272000100001",
+					"catOut": "BLT",
+					"catIn": "BLT",
+					"catCode": "7",
+					"cls": "128",
+					"catOutS": "BLT",
+					"catOutL": "Länstrafik - Buss",
+					"operatorCode": "272",
+					"operator": "Länstrafiken Västerbotten",
+					"admin": "272___",
+					"routeIdxFrom": 21,
+					"routeIdxTo": 35,
+					"matchId": "1;1;41"
+				}
+			],
+			"Notes": {
+				"Note": [
+					{
+						"value": "Lag 2015:953 tillämpas",
+						"key": "EG",
+						"type": "A",
+						"routeIdxFrom": 21,
+						"routeIdxTo": 35,
+						"txtN": "Lag 2015:953 tillämpas"
+					}
+				]
+			},
+			"name": "Länstrafik - Buss 1",
+			"type": "ST",
+			"stop": "Umeå Stadshuset",
+			"stopid": "A=1@O=Umeå Stadshuset@X=20253335@Y=63828455@U=1@L=740045384@",
+			"stopExtId": "740045384",
+			"lon": 20.253335,
+			"lat": 63.828455,
+			"time": "08:58:00",
+			"date": "2024-11-21",
+			"reachable": true,
+			"direction": "Umeå Paradisgränd",
+			"directionFlag": "1"
+		}
+	],
+	"TechnicalMessages": {
+		"TechnicalMessage": [
+			{
+				"value": "2024-11-21 00:23:04",
+				"key": "requestTime"
+			},
+			{
+				"value": "ttp=16392#16527 plancode0=xip3y planid=1732077852 planid0=1732077852 planid_adr=1479298166 plancode_adr=q0r10 srvv=5.45.SAMTRAFIKEN.15.0.1 (customer/hcusamtrafiken/release/2023.10.0) [2023-10-19] tlibv=TRFVER: rel/pproxy/4.00.0 2022-10-24 18:24:51 +0200 Relay_EnrichmentProxy v1 jno=1",
+				"key": "backendInfo"
+			}
+		]
+	},
+	"serverVersion": "2.45.1",
+	"dialectVersion": "2.45",
+	"planRtTs": "1970-01-01T01:00:00.000+01:00",
+	"requestId": "rz4c5jackm8894cs"
+}
