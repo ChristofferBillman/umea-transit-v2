@@ -11,7 +11,8 @@ import { routes } from './App'
 interface Route {
 	path: string,
 	element: ReactNode,
-	nodeRef: RefObject<HTMLElement> | undefined
+	nodeRef: RefObject<HTMLElement> | undefined,
+	errorElement: ReactNode
 }
 
 const typedRoutes = routes as Route[]
@@ -22,10 +23,12 @@ const router = createBrowserRouter([
 	{
 		path: '/',
 		element: <App outlet={<TransitionedRouter />} />,
-		children: routes.map((route) => ({
+		children: typedRoutes.map((route) => ({
+			nodeRef: route.nodeRef,
 			index: route.path === '/',
 			path: route.path === '/' ? undefined : route.path,
 			element: route.element,
+			errorElement: route.errorElement,
 		}))
 	}
 ])
