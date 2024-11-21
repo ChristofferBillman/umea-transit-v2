@@ -1,7 +1,8 @@
+import { ReactNode } from 'react'
 import css from './H1.module.css'
 
 interface Props {
-	children: string[] | string
+	children: ReactNode
 }
 export function H1({ children }: Props) {
 	return (
