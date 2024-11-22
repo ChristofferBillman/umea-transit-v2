@@ -1,13 +1,10 @@
 import { useParams } from 'react-router-dom'
 
 import { Button, Eyebrow, H1, Icon, Skeleton, Error, M } from '@components/common'
-
 import DepartureBoardItem from '@components/DepartureBoardItem'
-
 import { usePinnedBoardsStore } from '@compositions/Pins/usePinnedBoardsStore'
 
-import useStop from '../../api/getStop'
-import useDeparturesFromStopName from '../../api/getDeparturesFromStopName'
+import { useStop, useDepartures } from '@api'
 
 import css from './DepartureBoard.module.css'
 
@@ -15,10 +12,25 @@ export function DepartureBoard() {
 	const { stopName } = useParams()
 
 	const pin = usePinnedBoardsStore(state => state.pin)
+	const pins = usePinnedBoardsStore(state => state.pins)
+	const unpin = usePinnedBoardsStore(state => state.unpin)
+	const setOpen = usePinnedBoardsStore(state => state.setOpen)
 
-	const { isPending, isError, data } = useDeparturesFromStopName(stopName ? stopName : '')
+	const stopQuery = useStop(stopName)
+	const stopId = stopQuery.data?.id
 
-	const stopRequest = useStop(stopName ? stopName : '')
+	const departuresQuery = useDepartures(
+		stopId!,
+		undefined,
+		{
+			enabled: !!stopId
+		}
+	)
+
+	const isPending = stopQuery.isPending || departuresQuery.isPending
+	const isError = stopQuery.isError || departuresQuery.isError
+
+	const isPinned = pins.find(stop => stop.name === stopName) !== undefined
 
 	return (
 		<>
@@ -41,24 +53,33 @@ export function DepartureBoard() {
 				loading={isPending}
 				errored={isError}
 				renderData={() => (
-					data.map(departure => (
+					departuresQuery.data?.map(departure => (
 						<DepartureBoardItem
 							departure={departure}
 							key={departure.time + departure.line.name}
 						/>
-					)))}
+					))
+				)}
 				renderError={() => <Error />}
 			/>
 
 			<div className={css.pinboardInfo}>
 				<Button
 					onClick={() => {
-						if (!stopRequest.data) return
-						pin(stopRequest.data.id)
+						if (!stopQuery.data) return
+						if (!isPinned) {
+							pin(stopQuery.data)
+							setOpen(true)
+						}
+						else unpin(stopQuery.data.id)
+
 					}}
 				>
 					<Icon name='pinboard' />
-					Fäst "{stopName}"
+					{!isPinned ?
+						`Fäst "${stopName}"` :
+						`Lossa "${stopName}"`
+					}
 				</Button>
 				<M style={{ textAlign: 'center' }}>Avgångstavlor som du använder ofta kan du fästa. De blir då synliga i en meny till höger.</M>
 			</div>

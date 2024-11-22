@@ -1,47 +1,42 @@
 import { Card, Eyebrow, Skeleton, Error, H1 } from '@components/common'
+import DepartureBoardItem from '@components/DepartureBoardItem'
 import DepartureBoard from '@compositions/DepartureBoard'
-
 import { usePinnedBoardsStore } from '@compositions/Pins/usePinnedBoardsStore'
-import useStop from '../../api/getStop'
+
+import { Stop, useDepartures } from '@api'
 
 import css from './PinnedDepartureBoard.module.css'
-import useDepartures from '../../api/getDepartures'
-import DepartureBoardItem from '@components/DepartureBoardItem'
 
 interface Props {
-	stopId: string
+	stop: Stop
 }
 
-export function PinnedDepartureBoard({ stopId }: Props) {
+export function PinnedDepartureBoard({ stop }: Props) {
 
-	const setSelectedPin = usePinnedBoardsStore(state => state.setSelectedPin)
 	const selectedPin = usePinnedBoardsStore(state => state.selectedPin)
 
-	const stopRequest = useStop(stopId)
-	const departuresRequest = useDepartures(stopId)
+	const departuresQuery = useDepartures(stop.id)
 
 	return (
 		<Card
 			className={css.container}
 		>
-			{selectedPin === stopId ? (
+			{selectedPin?.id === stop.id ? (
 				<DepartureBoard />
 			) : (
 				<Skeleton
-					loading={stopRequest.isLoading || departuresRequest.isLoading}
-					errored={stopRequest.isError || departuresRequest.isError}
+					loading={departuresQuery.isLoading}
+					errored={departuresQuery.isError}
 					className={css.content}
-					renderData={() => {
-
-						console.log(departuresRequest?.data[0])
-						return <>
+					renderData={() => (
+						<>
 							<Eyebrow>Nästa avgång</Eyebrow>
-							<H1>{stopRequest.data?.name}</H1>
+							<H1>{stop.name}</H1>
 							<DepartureBoardItem
-								departure={departuresRequest.data[0]}
+								departure={departuresQuery.data?.[0]}
 							/>
 						</>
-					}}
+					)}
 					renderError={() => <Error />}
 				/>
 			)
@@ -49,5 +44,3 @@ export function PinnedDepartureBoard({ stopId }: Props) {
 		</Card>
 	)
 }
-
-/*onClick={() => setSelectedPin(stopId)}*/
