@@ -1,5 +1,4 @@
-import { H1 } from '@components/common'
-import { Input } from '@components/common'
+import { H1, Input } from '@components/common'
 
 export function DepartureBoards() {
 	return (

@@ -1,19 +1,19 @@
-import { ReactNode, useState } from 'react'
+import { ReactNode } from 'react'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 
-import Map from '@components/Map'
-
-import Navbar from '@components/Navbar'
 import { Error } from '@components/common'
+import Map from '@components/Map'
+import Navbar from '@components/Navbar'
 import Menu from '@components/Menu'
 import Home from '@compositions/Home'
 import Directions from '@compositions/Directions'
 import Pins from '@compositions/Pins'
-
-import './styles/App.css'
 import DepartureBoards from '@compositions/DepartureBoards'
 import DepartureBoard from '@compositions/DepartureBoard'
+
 import { useMenuStore } from '@components/Menu/useMenuStore'
+
+import './styles/App.css'
 
 export const routes = [
 	{
@@ -48,21 +48,18 @@ interface Props {
 export default function App({ outlet }: Props) {
 
 	const open = useMenuStore(state => state.open)
-	const [pinsOpen, setPinsOpen] = useState(false)
 
 	return (
 		<QueryClientProvider client={queryClient}>
 
-			<Navbar
-				setPinsOpen={setPinsOpen}
-			/>
+			<Navbar />
 			<Map />
 
 			<Menu open={open}>
 				{outlet}
 			</Menu>
 
-			<Pins open={pinsOpen} />
+			<Pins />
 		</QueryClientProvider>
 	)
 }

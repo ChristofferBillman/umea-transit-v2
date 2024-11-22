@@ -1,5 +1,4 @@
-import { Button, H1, Icon } from '@components/common'
-import { Input } from '@components/common'
+import { Button, H1, Icon, Input } from '@components/common'
 
 export function Directions() {
 	return (

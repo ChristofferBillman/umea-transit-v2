@@ -6,7 +6,9 @@ import css from './Error.module.css'
 export function Error() {
 
 	const error = useRouteError() as Error
-	console.log(error)
+
+	console.error(error)
+
 	if (!isRouteErrorResponse(error)) {
 		return <div className={css.container}>
 			<E>Hoppsan, något gick snett!</E>

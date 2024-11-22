@@ -1,26 +1,23 @@
-import { Button, E } from '@components/common'
+import { Button, E, M } from '@components/common'
 import LineChip from '@components/LineChip'
 
 import css from './DepartureBoardItem.module.css'
+import { Departure } from 'api/useDepartures'
 
 
 interface Props {
-	departure: {
-		line: {
-			name: string
-			id: number
-		}
-		time: string
-		plannedTime: string
-		howOften: string
-	}
+	departure?: Departure
 }
 
 export function DepartureBoardItem({ departure }: Props) {
 
+	if (!departure) {
+		return <M>Inga avgångar hittades.</M>
+	}
+
 	const now = new Date()
 	const nowTime = now.getHours() + ':' + now.getMinutes()
-	const minutes = getTimeDifference(nowTime, departure.time)
+	const diff = getTimeDifference(nowTime, departure.time)
 
 	return (
 		<Button className={css.container}>
@@ -31,11 +28,11 @@ export function DepartureBoardItem({ departure }: Props) {
 					<span style={{ display: 'flex', gap: '0.5rem' }}>
 						<E>{departure.time}</E>
 						<E>{departure.plannedTime}</E>
-						<E>(Om {minutes} min)</E>
+						<M>(Om {diff})</M>
 					</span>
 				</div>
 			</div>
-			<span>Var {departure.howOften}</span>
+			<M>{departure.howOften}</M>
 		</Button>
 	)
 }
@@ -56,6 +53,10 @@ function getTimeDifference(startTime: string, endTime: string) {
 		differenceInMinutes += 24 * 60 // Add 24 hours worth of minutes
 	}
 
-	// Return formatted difference as hh:mm
-	return differenceInMinutes
+	if (differenceInMinutes < 60) return differenceInMinutes + 'min'
+
+	const remainingMinutes = differenceInMinutes % 60
+	const hours = Math.floor(differenceInMinutes / 24)
+
+	return hours + 'h, ' + remainingMinutes + 'min'
 }
