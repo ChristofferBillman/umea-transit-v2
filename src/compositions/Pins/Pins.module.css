@@ -7,8 +7,8 @@
 	top: 7rem;
 	right: 0;
 	width: 26rem;
-	height: calc(100vh - 14rem);
-	padding: 2rem;
+	height: calc(100vh - 16rem);
+	padding: 4rem 2rem;
 	overflow: scroll;
 	transition-duration: var(--transition-duration-long);
 	transition-timing-function: var(--timing-function);
@@ -17,7 +17,7 @@
 		to bottom,
 		transparent 0%,
 		black 4rem,
-		black calc(100% - 48px),
+		black calc(100% - 4rem),
 		transparent 100%
 	);
 }
@@ -28,10 +28,4 @@
 
 .closed {
 	transform: translateX(33rem);
-}
-
-.filler {
-	height: 2rem;
-	width: 100%;
-	box-sizing: border-box;
 }
