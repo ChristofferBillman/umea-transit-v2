@@ -3,6 +3,7 @@
 	font-size: 1rem;
 	text-transform: uppercase;
 	color: var(--muted-text);
-	font-weight: 400;
+	font-weight: 500;
+	font-family: 'Inter';
 	margin: 0 0 1rem 0;
 }
