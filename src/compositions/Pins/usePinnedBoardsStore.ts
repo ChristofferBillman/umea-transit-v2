@@ -1,17 +1,30 @@
+import { Stop } from 'api/useStop'
 import { create } from 'zustand'
 
 interface PinnedBoardsState {
-	pins: string[]
-	pin: (stopdId: string) => void
+	pins: Stop[]
+	pin: (stop: Stop) => void
 	unpin: (stopId: string) => void,
-	selectedPin: string | null
+	selectedPin: Stop | null
 	setSelectedPin: (stopId: string) => void,
+	open: boolean,
+	setOpen: (open: boolean) => void
 }
 
 export const usePinnedBoardsStore = create<PinnedBoardsState>(set => ({
 	pins: [],
-	pin: (stopId) => set((state) => ({ pins: [...state.pins, stopId] })),
-	unpin: (stopId) => set((state) => ({ pins: state.pins.filter(pin => pin !== stopId) })),
+	pin: (stop) => set((state) => (
+		{ pins: [...state.pins, stop] }
+	)),
+	unpin: (stopId) => set((state) => (
+		{ pins: state.pins.filter(stop => stop.id !== stopId) }
+	)),
 	selectedPin: null,
-	setSelectedPin: (stopId) => set(() => ({ selectedPin: stopId })),
+	setSelectedPin: (stopId) => set(state => (
+		{ selectedPin: state.pins.find(stop => stop.id === stopId) }
+	)),
+	open: false,
+	setOpen: open => set(() => (
+		{ open }
+	))
 }))

@@ -1,21 +1,27 @@
 import clsx from 'clsx'
 
-import css from './Pins.module.css'
-import { usePinnedBoardsStore } from './usePinnedBoardsStore'
 import PinnedDepartureBoard from '@components/PinnedDepartureBoard'
 
-interface Props {
-	open: boolean
-}
-export function Pins({ open }: Props) {
+
+import { usePinnedBoardsStore } from './usePinnedBoardsStore'
+
+import css from './Pins.module.css'
+
+export function Pins() {
 
 	const pins = usePinnedBoardsStore(state => state.pins)
+	const open = usePinnedBoardsStore(state => state.open)
 
 	return (
-		<div className={clsx(css.pins, open ? css.open : css.closed)}>
-			<div className={css.filler} />
-			{pins.map(stopId => <PinnedDepartureBoard stopId={stopId} key={stopId} />)}
-			<div className={css.filler} />
+		<div
+			className={clsx(css.pins, open ? css.open : css.closed)}
+		>
+			{pins.map(stop => (
+				<PinnedDepartureBoard
+					stop={stop}
+					key={stop.id}
+				/>
+			))}
 		</div>
 	)
 }

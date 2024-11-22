@@ -1,10 +1,11 @@
-import { Dispatch, SetStateAction } from 'react'
+import { useLocation } from 'react-router-dom'
 
 import { Button, Card, Icon, NavButton } from '@components/common'
 
-import css from './Navbar.module.css'
-import { useLocation } from 'react-router-dom'
 import { useMenuStore } from '@components/Menu/useMenuStore'
+import { usePinnedBoardsStore } from '@compositions/Pins/usePinnedBoardsStore'
+
+import css from './Navbar.module.css'
 
 const menuItems = [{
 	icon: 'home',
@@ -19,14 +20,14 @@ const menuItems = [{
 	icon: 'tune',
 	link: '/settings'
 },]
-interface Props {
-	setPinsOpen: Dispatch<SetStateAction<boolean>>
-}
-export function Navbar({ setPinsOpen }: Props) {
+
+export function Navbar() {
 
 	const { pathname } = useLocation()
 
 	const menuState = useMenuStore(state => state)
+	const setPinsOpen = usePinnedBoardsStore(state => state.setOpen)
+	const pinsOpen = usePinnedBoardsStore(state => state.open)
 
 	return (
 		<>
@@ -51,7 +52,7 @@ export function Navbar({ setPinsOpen }: Props) {
 
 			<Card as='nav' className={css.pinned}>
 				<Button
-					onClick={() => setPinsOpen(prevState => !prevState)}
+					onClick={() => setPinsOpen(!pinsOpen)}
 				>
 					<Icon name='pinboard' />
 				</Button>
