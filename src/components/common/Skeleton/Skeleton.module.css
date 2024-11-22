@@ -1,6 +1,7 @@
 .loader {
 	animation: loading-animation var(--transition-duration-long) linear infinite
 		alternate;
+	border-radius: var(--border-radius-sm);
 }
 
 .errored {
