@@ -1,4 +1,4 @@
-import { ReactNode } from 'react'
+import { ForwardedRef, forwardRef, ReactNode } from 'react'
 
 import clsx from 'clsx'
 
@@ -11,7 +11,7 @@ interface Props {
 	onClick?: () => void
 }
 
-export function Card({ children, as = 'div', className, onClick }: Props) {
+export const Card = forwardRef(({ children, as = 'div', className, onClick }: Props, ref: ForwardedRef<HTMLDivElement>) => {
 
 	const Wrapper = as
 
@@ -19,8 +19,9 @@ export function Card({ children, as = 'div', className, onClick }: Props) {
 		<Wrapper
 			className={clsx(css.card, className)}
 			onClick={onClick}
+			ref={ref}
 		>
 			{children}
 		</Wrapper>
 	)
-}
+})
