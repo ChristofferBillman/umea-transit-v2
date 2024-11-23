@@ -1,8 +1,12 @@
 .container {
 	width: 100%;
 	box-sizing: border-box;
+	gap: 0.25rem;
+	padding: 1.25rem 1.25rem 0.625rem 1.25em;
 }
 
-.content {
-	height: 9rem;
+.item {
+	margin: 0rem -0.625rem 0rem -0.625rem;
+	width: calc(100% + 1.25rem);
+	border-radius: 1.25rem;
 }

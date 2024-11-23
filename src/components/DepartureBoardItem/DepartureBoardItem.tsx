@@ -3,13 +3,15 @@ import LineChip from '@components/LineChip'
 
 import css from './DepartureBoardItem.module.css'
 import { Departure } from 'api/useDepartures'
+import clsx from 'clsx'
 
 
 interface Props {
 	departure?: Departure
+	className?: string
 }
 
-export function DepartureBoardItem({ departure }: Props) {
+export function DepartureBoardItem({ departure, className }: Props) {
 
 	if (!departure) {
 		return <M>Inga avgångar hittades.</M>
@@ -20,7 +22,7 @@ export function DepartureBoardItem({ departure }: Props) {
 	const diff = getTimeDifference(nowTime, departure.time)
 
 	return (
-		<Button className={css.container}>
+		<Button className={clsx(css.container, className)}>
 			<div className={css.inner}>
 				<LineChip line={departure.line.id} />
 				<div className={css.innerinner}>

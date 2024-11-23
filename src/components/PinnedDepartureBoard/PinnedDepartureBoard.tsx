@@ -34,6 +34,7 @@ export function PinnedDepartureBoard({ stop }: Props) {
 							<H1>{stop.name}</H1>
 							<DepartureBoardItem
 								departure={departuresQuery.data?.[0]}
+								className={css.item}
 							/>
 						</>
 					)}
