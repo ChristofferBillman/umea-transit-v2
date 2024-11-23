@@ -1,0 +1,21 @@
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: none;
+	height: 5rem;
+	width: 100%;
+	flex-shrink: 0;
+}
+
+.lineChips {
+	display: flex;
+	gap: 0.25rem;
+}
+
+.container:hover {
+	background: var(--elevatedbg);
+}
+
+.inner {
+}

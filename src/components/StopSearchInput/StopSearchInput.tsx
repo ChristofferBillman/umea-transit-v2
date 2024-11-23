@@ -11,9 +11,11 @@ import { stops } from '../../data/stops'
 import clsx from 'clsx'
 import css from './StopSearchInput.module.css'
 
-type Props = InputHTMLAttributes<HTMLInputElement>
+interface Props extends InputHTMLAttributes<HTMLInputElement> {
+	onSelect?: (e: ChangeEvent<HTMLInputElement>) => void
+}
 
-export function StopSearchInput({ onChange, value, defaultValue = '', ...props }: Props) {
+export function StopSearchInput({ onChange, value, defaultValue = '', onSelect, ...props }: Props) {
 
 	const [internalValue, setInternalValue] = useState(defaultValue)
 	const isControlled = value !== undefined
@@ -42,6 +44,7 @@ export function StopSearchInput({ onChange, value, defaultValue = '', ...props }
 		} as ChangeEvent<HTMLInputElement>
 
 		handleChange(syntheticEvent)
+		if (onSelect) onSelect(syntheticEvent)
 		setTimeout(() => setOpen(false), 5)
 	}
 
