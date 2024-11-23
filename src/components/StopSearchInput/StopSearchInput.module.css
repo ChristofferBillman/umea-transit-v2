@@ -1,0 +1,30 @@
+.container {
+	position: relative;
+}
+
+.resultsContainer {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	top: calc(100% + 0.5rem);
+	left: 0;
+	box-sizing: border-box;
+	width: inherit;
+	width: 100%;
+	visibility: hidden;
+	padding: 0.625rem;
+	gap: 0.25rem;
+	border-radius: 1.375rem;
+	background: var(--elevatedbg);
+	/*outline-color: Highlight;
+	outline-style: auto;*/
+	z-index: 1;
+}
+
+.open {
+	visibility: visible;
+}
+
+.info {
+	padding: 2rem 0.5rem;
+}

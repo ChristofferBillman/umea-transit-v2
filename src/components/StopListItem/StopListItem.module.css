@@ -1,0 +1,16 @@
+.container {
+	display: flex;
+	justify-content: space-between;
+	background: none;
+	padding: 2rem 0.5rem;
+	width: 100%;
+}
+
+.container:hover {
+	background: var(--elevatedbghover);
+}
+
+.lineChips {
+	display: flex;
+	gap: 0.5rem;
+}
