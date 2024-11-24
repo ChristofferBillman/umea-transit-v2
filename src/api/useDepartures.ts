@@ -6,6 +6,7 @@ export interface Departure {
 	line: {
 		id: number,
 		name: string
+		nameComesFromAPI: boolean
 	},
 	time: string
 	plannedTime: string,
@@ -48,21 +49,23 @@ export async function getDepartures(stopId: string, time?: string) {
 		console.log(e)
 	}
 
-	return mapper(json)
+	const res = mapper(json)
+	return res
 }
 
 function mapper(data): Departure[] {
 	if (!Object.hasOwn(data, 'Departure')) return []
 	return data.Departure.map(departure => {
 		const id = Number(departure.ProductAtStop.displayNumber)
-		let line = lines.find(l => l.id === id)
-
-		if (!line) line = lines.find(l => l.id === -1)
+		const line = lines.find(l => l.id === id)
 
 		return {
 			line: {
 				id,
-				name: line!.names[Number(departure.directionFlag) - 1]
+				nameComesFromAPI: !line,
+				name: line ?
+					line.names[Number(departure.directionFlag) - 1] :
+					departure.name
 			},
 			time: departure.rtTime ?
 				departure.rtTime :
