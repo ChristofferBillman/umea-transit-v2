@@ -5,27 +5,29 @@ import StopSearchInput from '@components/StopSearchInput'
 
 import { useStop, useTripSearch } from '@api'
 
-import css from './Directions.module.css'
+import css from './Trips.module.css'
 import TripListItem from '@components/TripListItem'
+import { useTripsStore } from './TripsStore'
 
-export function Directions() {
+export function Trips() {
 
-	const [from, setFrom] = useState('')
-	const [to, setTo] = useState('')
+	const tripsStore = useTripsStore()
 
 	const [fromString, setFromString] = useState('')
 	const [toString, setToString] = useState('')
 
 	const handleSwitch = () => {
-		const temp = from
-		setFrom(to)
-		setTo(temp)
-		setFromString(to)
+		const temp = tripsStore.from
+
+		tripsStore.setFrom(tripsStore.to)
+		tripsStore.setTo(temp)
+
+		setFromString(tripsStore.to)
 		setToString(temp)
 	}
 
-	const fromQuery = useStop(from, { enabled: false })
-	const toQuery = useStop(to)
+	const fromQuery = useStop(tripsStore.from, { enabled: false })
+	const toQuery = useStop(tripsStore.to, { enabled: tripsStore.to !== '' })
 
 	const tripsQuery = useTripSearch(
 		fromQuery.data?.id || '',
@@ -33,7 +35,7 @@ export function Directions() {
 		undefined,
 		undefined,
 		{
-			enabled: !!fromQuery.data?.id && !!toQuery.data?.id
+			enabled: !!fromQuery.data?.id && !!toQuery.data?.id && tripsStore.to !== '' && tripsStore.from !== ''
 		}
 	)
 
@@ -44,7 +46,7 @@ export function Directions() {
 				placeholder='Från'
 				value={fromString}
 				onChange={e => setFromString(e.target.value)}
-				onSelect={e => setFrom(e.target.value)}
+				onSelect={e => tripsStore.setFrom(e.target.value)}
 			/>
 			<Button
 				className={css.switchButton}
@@ -57,7 +59,7 @@ export function Directions() {
 				value={toString}
 				onChange={e => setToString(e.target.value)}
 				onSelect={e => {
-					setTo(e.target.value)
+					tripsStore.setTo(e.target.value)
 					fromQuery.refetch()
 				}}
 			/>

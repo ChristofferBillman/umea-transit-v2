@@ -15,7 +15,7 @@ const menuItems = [{
 	link: '/departureBoards'
 }, {
 	icon: 'route',
-	link: '/directions'
+	link: '/trips'
 }, {
 	icon: 'tune',
 	link: '/settings'
