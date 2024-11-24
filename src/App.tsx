@@ -6,7 +6,7 @@ import Map from '@components/Map'
 import Navbar from '@components/Navbar'
 import Menu from '@components/Menu'
 import Home from '@compositions/Home'
-import Directions from '@compositions/Directions'
+import Trips from '@compositions/Trips'
 import Pins from '@compositions/Pins'
 import DepartureBoards from '@compositions/DepartureBoards'
 import DepartureBoard from '@compositions/DepartureBoard'
@@ -14,6 +14,7 @@ import DepartureBoard from '@compositions/DepartureBoard'
 import { useMenuStore } from '@components/Menu/useMenuStore'
 
 import './styles/App.css'
+import TripDetail from '@compositions/TripDetail'
 
 export const routes = [
 	{
@@ -30,8 +31,12 @@ export const routes = [
 		errorElement: <Error />
 	},
 	{
-		path: '/directions',
-		element: <Directions />,
+		path: '/trips',
+		element: <Trips />,
+	},
+	{
+		path: '/trips/detail',
+		element: <TripDetail />,
 	},
 	{
 		path: '/settings',

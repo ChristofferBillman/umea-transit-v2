@@ -84,7 +84,7 @@ export function StopSearchInput({ onChange, value, defaultValue = '', onSelect, 
 						<StopListItem
 							stopName={stop.name}
 							onClick={handleSetStop}
-							key={stop.name}
+							key={stop.id}
 							lines={stop.lineIds}
 						/>
 					))

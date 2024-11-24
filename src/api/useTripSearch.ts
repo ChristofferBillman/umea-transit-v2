@@ -56,7 +56,6 @@ export async function getTrips(from: string, to: string, via?: string, time?: st
 function mapper(data): Trip[] {
 	if (!Object.hasOwn(data, 'Trip')) return []
 	const d = data.Trip.map(trip => {
-		console.log(trip)
 		return {
 			legs: trip.LegList.Leg.map(leg => ({
 				origin: {

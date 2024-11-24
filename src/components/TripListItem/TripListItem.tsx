@@ -1,8 +1,11 @@
+import { useNavigate } from 'react-router-dom'
+
 import { Button, E, Icon, M } from '@components/common'
 import LineChip from '@components/LineChip'
 
-import css from './TripListItem.module.css'
 import { Trip } from '@api'
+
+import css from './TripListItem.module.css'
 
 
 interface Props {
@@ -11,12 +14,17 @@ interface Props {
 
 export function TripListItem({ trip }: Props) {
 
+	const navigate = useNavigate()
+
 	if (!trip) {
 		return <M>Inga avgångar hittades.</M>
 	}
 
 	return (
-		<Button className={css.container}>
+		<Button
+			className={css.container}
+			onClick={() => navigate('/trips/detail', { state: trip })}
+		>
 			<div className={css.inner}>
 				<E>
 					{trip.legs[0].origin.time}

@@ -43,12 +43,10 @@ button {
 
 .page-enter {
 	opacity: 0;
-	transform: translateX(-2rem);
 }
 
 .page-enter-active {
 	opacity: 1;
-	transform: translateX(0rem);
 	transition: opacity 300ms, transform 300ms;
 }
 
@@ -59,6 +57,5 @@ button {
 
 .page-exit-active {
 	opacity: 0;
-	transform: translateX(2rem);
 	transition: opacity 300ms, transform 300ms;
 }
