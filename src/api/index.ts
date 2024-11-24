@@ -4,4 +4,4 @@ export { default as useTripSearch } from './useTripSearch'
 
 export type { Departure } from './useDepartures'
 export type { Stop } from './useStop'
-export type { Trip } from './useTripSearch'
+export type { Trip, Leg } from './useTripSearch'
