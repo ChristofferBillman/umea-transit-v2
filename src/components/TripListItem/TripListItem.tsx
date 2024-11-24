@@ -32,7 +32,7 @@ export function TripListItem({ trip }: Props) {
 					{trip.legs[0].origin.time}
 				</E>
 				<div className={css.lineChips}>
-					{trip.legs.map(leg => <LineChip line={Number(leg.line.id)} />)}
+					{trip.legs.map(leg => <LineChip line={Number(leg.line.id)} type={leg.type} />)}
 				</div>
 			</div>
 

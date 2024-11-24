@@ -3,20 +3,23 @@
 	align-items: center;
 	justify-content: center;
 	border-radius: var(--border-radius-sm);
+	min-width: 2rem;
+	padding: 0 0.5rem;
+	box-sizing: border-box;
 }
 
-.linechip p {
+.linechip {
 	font-size: 1.25rem;
 	font-weight: 700;
 	color: white;
 }
 
 .sm {
-	width: 2rem;
 	height: 2rem;
 }
 
 .lg {
-	width: 4rem;
-	height: 4rem;
+	height: 3rem;
+	width: 3rem;
+	border-radius: calc(var(--border-radius-sm) * 1.5);
 }
