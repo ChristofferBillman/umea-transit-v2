@@ -1,15 +1,15 @@
-import { ReactNode } from 'react'
+import { HTMLAttributes } from 'react'
+
+import clsx from 'clsx'
 import css from './H1.module.css'
 
-interface Props {
-	children: ReactNode
-}
-export function H1({ children }: Props) {
+type Props = HTMLAttributes<HTMLHeadingElement>
+
+export function H1({ className, ...props }: Props) {
 	return (
 		<h1
-			className={css.h1}
-		>
-			{children}
-		</h1>
+			className={clsx(css.h1, className)}
+			{...props}
+		/>
 	)
 }

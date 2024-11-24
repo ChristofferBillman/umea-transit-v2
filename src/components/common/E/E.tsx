@@ -1,18 +1,16 @@
-import { ReactNode } from 'react'
+import { HTMLAttributes } from 'react'
 import css from './E.module.css'
+import clsx from 'clsx'
 
-interface Props {
-	children: ReactNode
-}
+type Props = HTMLAttributes<HTMLSpanElement>
 /**
  * Empasis
  */
-export function E({ children }: Props) {
+export function E({ className, ...props }: Props) {
 	return (
 		<span
-			className={css.e}
-		>
-			{children}
-		</span>
+			className={clsx(css.e, className)}
+			{...props}
+		/>
 	)
 }

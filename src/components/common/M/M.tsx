@@ -1,20 +1,16 @@
-import { DetailedHTMLProps, ReactNode } from 'react'
+import { HTMLAttributes } from 'react'
 import css from './M.module.css'
 import clsx from 'clsx'
 
-interface Props extends DetailedHTMLProps<React.HTMLAttributes<HTMLSpanElement>, HTMLSpanElement> {
-	children: ReactNode
-}
+type Props = HTMLAttributes<HTMLSpanElement>
 /**
  * Muted
  */
-export function M({ children, className, ...props }: Props) {
+export function M({ className, ...props }: Props) {
 	return (
 		<span
 			{...props}
 			className={clsx(css.m, className)}
-		>
-			{children}
-		</span>
+		/>
 	)
 }
