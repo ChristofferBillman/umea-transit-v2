@@ -1,5 +1,3 @@
-import { useState } from 'react'
-
 import { Button, H1, Icon, Skeleton, Error } from '@components/common'
 import StopSearchInput from '@components/StopSearchInput'
 
@@ -13,17 +11,14 @@ export function Trips() {
 
 	const tripsStore = useTripsStore()
 
-	const [fromString, setFromString] = useState('')
-	const [toString, setToString] = useState('')
-
 	const handleSwitch = () => {
 		const temp = tripsStore.from
 
 		tripsStore.setFrom(tripsStore.to)
 		tripsStore.setTo(temp)
 
-		setFromString(tripsStore.to)
-		setToString(temp)
+		tripsStore.setFromString(tripsStore.to)
+		tripsStore.setToString(temp)
 	}
 
 	const fromQuery = useStop(tripsStore.from, { enabled: false })
@@ -44,8 +39,8 @@ export function Trips() {
 			<H1>Hitta resa</H1>
 			<StopSearchInput
 				placeholder='Från'
-				value={fromString}
-				onChange={e => setFromString(e.target.value)}
+				value={tripsStore.fromString}
+				onChange={e => tripsStore.setFromString(e.target.value)}
 				onSelect={e => tripsStore.setFrom(e.target.value)}
 			/>
 			<Button
@@ -56,8 +51,8 @@ export function Trips() {
 			</Button>
 			<StopSearchInput
 				placeholder='Till'
-				value={toString}
-				onChange={e => setToString(e.target.value)}
+				value={tripsStore.toString}
+				onChange={e => tripsStore.setToString(e.target.value)}
 				onSelect={e => {
 					tripsStore.setTo(e.target.value)
 					fromQuery.refetch()
