@@ -1,29 +1,31 @@
 import { useQuery, UseQueryOptions } from '@tanstack/react-query'
 import reserobotRequest from './reserobotRequest'
 import { Stop } from './useStop'
+import { lines } from '../data/lines'
 
+export interface Leg {
+	origin: {
+		name: string,
+		id: string,
+		time: string,
+		date: string
+	},
+	destination: {
+		name: string,
+		id: string,
+		time: string,
+		date: string
+	}
+	stops: Stop[],
+	line: {
+		id: string,
+		name: string
+	},
+	type: 'WALK' | 'TRSF' | 'JNY'
+	distance: number | undefined
+}
 export interface Trip {
-	legs: [
-		{
-			origin: {
-				name: string,
-				id: string,
-				time: string,
-				date: string
-			},
-			destination: {
-				name: string,
-				id: string,
-				time: string,
-				date: string
-			}
-			stops: Stop[],
-			line: {
-				id: string,
-				name: string
-			}
-		}
-	],
+	legs: Leg[],
 	duration: string
 }
 
@@ -57,28 +59,34 @@ function mapper(data): Trip[] {
 	if (!Object.hasOwn(data, 'Trip')) return []
 	const d = data.Trip.map(trip => {
 		return {
-			legs: trip.LegList.Leg.map(leg => ({
-				origin: {
-					name: leg.Origin.name,
-					id: leg.Origin.id,
-					time: leg.Origin.time.substring(0, leg.Origin.time.length - 3),
-					date: leg.Origin.date
-				},
-				destination: {
-					name: leg.Destination.name,
-					id: leg.Destination.id,
-					time: leg.Destination.time.substring(0, leg.Destination.time.length - 3),
-					date: leg.Destination.date
-				},
-				stops: []/*leg.Stops.map(stop => ({
+			legs: trip.LegList.Leg.map(leg => {
+				const line = lines.find(line => Number(leg.Product[0].displayNumber) === line.id)
+
+				return {
+					origin: {
+						name: leg.Origin.name.substr('Umeå '.length),
+						id: leg.Origin.id,
+						time: leg.Origin.time.substring(0, leg.Origin.time.length - 3),
+						date: leg.Origin.date
+					},
+					destination: {
+						name: leg.Destination.name.substr('Umeå '.length),
+						id: leg.Destination.id,
+						time: leg.Destination.time.substring(0, leg.Destination.time.length - 3),
+						date: leg.Destination.date
+					},
+					stops: []/*leg.Stops.map(stop => ({
 					name: stop.name,
 					id: stop.id
 				}))*/,
-				line: {
-					name: leg.Product[0].name,
-					id: leg.Product[0].displayNumber
+					line: {
+						name: line ? line.names[Number(leg.directionFlag) - 1] : leg.Product[0].name,
+						id: leg.Product[0].displayNumber
+					},
+					type: leg.type,
+					distance: leg.dist
 				}
-			})),
+			}),
 			duration: parseDuration(trip.duration)
 		}
 	})
