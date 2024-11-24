@@ -28,7 +28,11 @@ export function DepartureBoardItem({ departure, className }: Props) {
 			<div className={css.inner}>
 				<LineChip line={departure.line.id} />
 				<div className={css.innerinner}>
-					<E>mot {departure.line.name}</E>
+					<E>
+						{departure.line.nameComesFromAPI ?
+							departure.line.name :
+							`mot ${departure.line.name}`}
+					</E>
 					<span style={{ display: 'flex', gap: '0.5rem' }}>
 						<E>{departure.time}</E>
 						<E>{departure.plannedTime}</E>
