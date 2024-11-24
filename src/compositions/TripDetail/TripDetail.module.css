@@ -1,0 +1,32 @@
+.topHeader {
+	margin-bottom: 0;
+}
+
+.eyebrow {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+.headerArrow {
+	margin: 0.5rem 0;
+	cursor: unset;
+}
+
+.scrollContainer {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 0;
+	height: 36rem;
+	overflow-y: scroll;
+	gap: 0.5rem;
+	padding: 2rem 1rem 2rem 0;
+	margin: 0 -1rem 0 0;
+	mask-image: linear-gradient(
+		to bottom,
+		transparent 0%,
+		black 3.5rem,
+		black calc(100% - 3.5rem),
+		transparent 100%
+	);
+}
